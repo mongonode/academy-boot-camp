@@ -1,0 +1,40 @@
+.BenifitBox {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 4px 0px #0000003d;
+    border-radius: 4px;
+}
+
+.Tabs {
+    width: 100%;
+    background: linear-gradient(to right, rgb(0, 84, 187), rgb(72, 203, 255));
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.BenifitBox .Tab-Link {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+.BenifitBox .Tab-Link:hover {
+    background-color: rgba(255, 255, 255, 0.856);
+    color: blue;
+}
+
+.Box-Title {
+    width: 100%;
+    background-color: rgba(231, 231, 231, 0.829);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 1px;
+}
+
+.Box-Title h5 {
+    font-size: 18px;
+}
