@@ -12,7 +12,7 @@ const pageLinks = (
         <li><a href="/">Home</a></li>
         <li><a href="/learners">Learners</a></li>
         <li><a href="/educators">Educators</a></li>
-        <li><a href="/">Enterprises</a></li>
+        <li><a href="/enterprises">Enterprises</a></li>
         <li><a href="/">Talent Pool</a></li>
         <li><a href="/">About Us</a></li>
     </ul>

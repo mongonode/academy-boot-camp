@@ -26,7 +26,7 @@ function Educators() {
 
     return (
       <div className="Educators">
-          <div className="row g-0 Title-Learners">
+          <div className="row g-0">
               <div className="col-12 col-md-4">
                   <PageTitle First={title.first} Highlight={title.highlight} Next={title.next} Last={title.last}></PageTitle>
               </div>

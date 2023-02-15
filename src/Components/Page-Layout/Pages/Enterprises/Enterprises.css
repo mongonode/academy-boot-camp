@@ -1,0 +1,32 @@
+.Enterprises-Paragraph p {
+    background-color: rgb(241, 241, 241);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.For-Partners {
+    background-color: rgb(0,85,187);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.For-Partners img {
+    width: 170px;
+}
+
+.For-Student-E {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: rgb(0,85,187);
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+    .Enterprises-Paragraph p {
+        background-color:rgb(13,106,199);
+        color: rgb(230, 230, 230);
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
