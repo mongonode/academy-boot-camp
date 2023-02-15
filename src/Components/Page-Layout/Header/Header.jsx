@@ -10,7 +10,7 @@ import TogglerBackground from "../../../Assets/Header/Toggler-Background.png"
 const pageLinks = (
     <ul className='d-lg-flex'>
         <li><a href="/">Home</a></li>
-        <li><a href="/">Learners</a></li>
+        <li><a href="/learners">Learners</a></li>
         <li><a href="/">Educators</a></li>
         <li><a href="/">Enterprises</a></li>
         <li><a href="/">Talent Pool</a></li>

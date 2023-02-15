@@ -1,0 +1,21 @@
+.PageTitle {
+    background-image: url('../../../Assets/Learners-Page/Background.jpg');
+    background-size: cover;
+}
+
+.align-Title-Box {
+    background-color: rgba(0, 0, 0, 0.548);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.align-Title-Box h2 {
+    color: #ffff;
+    text-align: center;
+}
+
+.align-Title-Box span {
+    color: rgb(161, 225, 255);
+}

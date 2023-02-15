@@ -1,0 +1,35 @@
+.Page-Top {
+    display: flex;
+}
+
+.Why-Enroll {
+    margin-top: -20px;
+    border-radius: 8px;
+    box-shadow: 0px 1px 5px 1px #00000083;
+}
+
+.Enroll-Contents {
+    background-color: rgb(240, 240, 240);
+}
+
+.Tranings {
+    box-shadow: 0px 0px 3px 1px #000000bd;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 4576px) {
+    .Enroll-Contents {
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .Why-Enroll {
+        margin-top: 0px;
+        border-radius: 0px;
+        box-shadow: 0px 0px 0px 0px #ffffff00;
+    }
+
+    .Tranings {
+        margin-top: 1px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 3px 1px #00000059;
+    }
+}

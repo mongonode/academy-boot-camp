@@ -1,0 +1,11 @@
+.DataBox {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.DataBox h3 {
+    
+}

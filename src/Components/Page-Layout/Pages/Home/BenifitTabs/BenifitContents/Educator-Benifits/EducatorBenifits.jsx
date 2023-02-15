@@ -1,29 +1,29 @@
 import "./EducatorBenifits.css"
+import BulletList from "../../../../../../Re-Used/BulletList/BulletList";
 
 function EducatorBenifits() {
 
-    const benifitList = [
-        'Teach from anywhere.',
-        'Get a steady stream of income.',
-        'Manage your time towards a well-balanced life.',
-        'Make an impact.'
-    ];
+    const benifits = {
+        title: 'BENIFITS TO EDUCATORS',
+
+        benifitList : [
+            'Teach from anywhere.',
+            'Get a steady stream of income.',
+            'Manage your time towards a well-balanced life.',
+            'Make an impact.'
+        ],
+
+        action : 'Apply'
+    }
+
+    const get_Action =()=> {
+        console.log('Apply button Clicked')
+    }
+    
 
     return (
       <div className="EducatorBenifits">
-          <div className="Benifit-Box bg-white">
-              <h5>BENEFITS TO EDUCATORS</h5>
-
-              <ul className="Benifit-List">
-                  { benifitList.map( (benifit) => (
-                      <li>{ benifit }</li>
-                  ))}
-              </ul>
-
-              <div className="Benifit-Button">
-                  <button>Apply</button>
-              </div>
-          </div>
+          <BulletList Title={benifits.title} List={benifits.benifitList} Visible={1} Action={benifits.action} Get_Action={get_Action}></BulletList>
       </div>
     );
 }

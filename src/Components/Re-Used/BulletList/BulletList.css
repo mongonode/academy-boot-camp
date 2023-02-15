@@ -1,0 +1,28 @@
+.ContactForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Bullet-Box h5{
+    font-size: 15px;
+    color: rgb(0, 68, 196);
+}
+
+.Bullet-Box ul {
+    padding-left: 18px;
+}
+
+.Bullet-Box li {
+    font-size: 14px;
+    color: rgb(37, 37, 37);
+}
+
+.Align-Benifit-Button {
+    display: flex;
+    justify-content: center;
+}
+
+.Benifit-Button {
+    width: 160px;
+}

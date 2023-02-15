@@ -3,6 +3,7 @@ import Home from "../Page-Layout/Pages/Home/Home"
 import StudentBenifits from "../Page-Layout/Pages/Home/BenifitTabs/BenifitContents/Student-Benifits/StudentBenifits";
 import EnterprisesBenifits from "../Page-Layout/Pages/Home/BenifitTabs/BenifitContents/Enterprises-Benifits/EnterprisesBenifits";
 import EducatorBenifits from "../Page-Layout/Pages/Home/BenifitTabs/BenifitContents/Educator-Benifits/EducatorBenifits";
+import Learners from "../Page-Layout/Pages/Learners/Learners";
 
 function Routings() {
     return (
@@ -14,10 +15,12 @@ function Routings() {
                 <Route path='/enterprises-benifits' element={ <EnterprisesBenifits/> }></Route>
                 <Route path='/educator-benifits' element={ <EducatorBenifits/> }></Route>
             </Route>
+
+            <Route path='/learners' element={<Learners/>}></Route>
           </Routes>
         </Router>
       </div>
     );
 }
 
-export default Routings;  
+export default Routings;
