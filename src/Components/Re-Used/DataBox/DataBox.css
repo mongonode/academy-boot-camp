@@ -4,8 +4,32 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px 1px #00000060;
 }
 
 .DataBox h3 {
-    
+    font-size: 14px;
+    color: rgb(0, 51, 161);
+    text-align: center;
+    font-weight: 500;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.DataBox h4{
+    font-size: 14px;
+    background: linear-gradient(to right, rgba(0, 102, 226, 0.932), rgb(60, 177, 255));
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: 500;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.DataBox p {
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    color: rgb(105, 105, 105);
 }

@@ -6,6 +6,12 @@
     margin-top: -20px;
     border-radius: 8px;
     box-shadow: 0px 1px 5px 1px #00000083;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Why-Enroll img {
+    height: 150px;
 }
 
 .Enroll-Contents {
@@ -14,6 +20,15 @@
 
 .Tranings {
     box-shadow: 0px 0px 3px 1px #000000bd;
+}
+
+.Tranings h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+.Tranings span {
+    color: rgb(0, 58, 219);
 }
 
 @media only screen and (min-width: 768px) and (max-width: 4576px) {

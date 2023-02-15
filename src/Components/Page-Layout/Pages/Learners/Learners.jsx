@@ -3,6 +3,7 @@ import BulletList from "../../../Re-Used/BulletList/BulletList";
 import "./Learners.css"
 import VerticalGrid from "../../../Re-Used/VerticalGrid/VerticalGrid";
 import ContactForm from "../../../Re-Used/ContactForm/ContactForm";
+import Enroll from "../../../../Assets/Learners-Page/Enroll.png"
 
 function Learners() {
 
@@ -32,13 +33,17 @@ function Learners() {
               </div>
 
               <div className="col-12 col-md-8 Enroll-Contents">
-                  <div className="Why-Enroll mx-3 mb-4 mx-sm-5 mb-sm-5 mx-md-0 mb-md-0 pt-5 pb-4 px-5 bg-white">
-                      <BulletList Title={benifits.title} List={benifits.benifitList} Visible={false}></BulletList>
+                  <div className="Why-Enroll mx-4 mb-4 mx-sm-5 mb-sm-5 mx-md-0 mb-md-0 pt-5 pb-4 ps-5 bg-white">
+                        <BulletList Title={benifits.title} List={benifits.benifitList} Visible={false}></BulletList>
+                        <div className="d-none d-lg-block">
+                            <img src={Enroll} alt="Enroll-Image"/>
+                        </div>
                   </div>
               </div>  
           </div>
 
           <div className="Tranings px-5 py-5 ">
+                <h2 className="mb-4">EXPLORE OUR <span>JOB FOCUSED</span> TRANINGS</h2>
               <VerticalGrid></VerticalGrid>
           </div>
 

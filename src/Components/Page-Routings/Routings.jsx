@@ -4,6 +4,7 @@ import StudentBenifits from "../Page-Layout/Pages/Home/BenifitTabs/BenifitConten
 import EnterprisesBenifits from "../Page-Layout/Pages/Home/BenifitTabs/BenifitContents/Enterprises-Benifits/EnterprisesBenifits";
 import EducatorBenifits from "../Page-Layout/Pages/Home/BenifitTabs/BenifitContents/Educator-Benifits/EducatorBenifits";
 import Learners from "../Page-Layout/Pages/Learners/Learners";
+import Educators from "../Page-Layout/Pages/Educators/Educators"
 
 function Routings() {
     return (
@@ -17,6 +18,7 @@ function Routings() {
             </Route>
 
             <Route path='/learners' element={<Learners/>}></Route>
+            <Route path='/educators' element={<Educators/>}></Route>
           </Routes>
         </Router>
       </div>
