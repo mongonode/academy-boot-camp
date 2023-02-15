@@ -23,8 +23,7 @@
 }
 
 .BenifitBox .Tab-Link:hover {
-    background-color: rgba(255, 255, 255, 0.856);
-    color: blue;
+    text-decoration:underline;
 }
 
 .Box-Title {

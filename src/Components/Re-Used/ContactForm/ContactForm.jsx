@@ -13,24 +13,28 @@ const ContactForm =( props )=> {
                             <div className="col-12 col-md-6 px-3">
                                 <div className="Contact-Title mt-4">
                                     <h4>DIFFICULT TO <span>DESIDE</span>..?</h4>
-                                    <p className="pt-2">Connect with our consultants & mentors to learn what is best for you.</p>
+                                    <p className="pt-2">{props.SubTitle}</p>
                                 </div>
 
                                 <div className="Contact-Image py-3 d-none d-md-flex">
                                     <img src={ ContactIcon } alt="Contact Icon" />
                                 </div>
 
-                                <div className="Contact-Call pt-3 d-none d-md-flex">
-                                    <div className="Call">
-                                        <img src={ CallIcon } alt="" />
-                                        <p>0742833337</p>
-                                    </div>
+                                <div className="Talk-With-Us d-none d-md-block">
+                                    <p>{props.ContactTitle} <span>{props.Email}</span></p>
 
-                                    <p className="px-sm-3">|</p>
+                                    <div className="Contact-Call">
+                                        <div className="Call">
+                                            <img src={ CallIcon } alt="" />
+                                            <p>0742833337</p>
+                                        </div>
 
-                                    <div className="Call">
-                                        <img src={ WhatsappIcon } alt="" />
-                                        <p>0742833337</p>
+                                        <p className="px-sm-3">|</p>
+
+                                        <div className="Call">
+                                            <img src={ WhatsappIcon } alt="" />
+                                            <p>0742833337</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -76,18 +80,21 @@ const ContactForm =( props )=> {
                                    
                                     <button className="mx-1 mt-3">SEND US</button>
                                 </form>
+                                <div className="Talk-With-Us d-block d-md-none">
+                                    <p>{props.ContactTitle} <span>{props.Email}</span></p>
+                                
+                                    <div className="Contact-Call">
+                                        <div className="Call">
+                                            <img src={ CallIcon } alt="" />
+                                            <p>0742833337</p>
+                                        </div>
 
-                                <div className="Contact-Call pt-3 d-flex d-md-none">
-                                    <div className="Call">
-                                        <img src={ CallIcon } alt="" />
-                                        <p>0742833337</p>
-                                    </div>
+                                        <p className="px-2">|</p>
 
-                                    <p className="px-2">|</p>
-
-                                    <div className="Call">
-                                        <img src={ WhatsappIcon } alt="" />
-                                        <p>0742833337</p>
+                                        <div className="Call">
+                                            <img src={ WhatsappIcon } alt="" />
+                                            <p>0742833337</p>
+                                        </div>
                                     </div>
                                 </div>
                            </div>

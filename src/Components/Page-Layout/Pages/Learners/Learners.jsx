@@ -47,7 +47,10 @@ function Learners() {
               <VerticalGrid></VerticalGrid>
           </div>
 
-          <ContactForm></ContactForm>
+            <ContactForm 
+                SubTitle='Drop a message. You will be contacted by our mentors.' 
+                ContactTitle='OR feel free to talk to us and decide.'>
+            </ContactForm>
       </div>
     );
 }

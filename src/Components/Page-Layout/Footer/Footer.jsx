@@ -1,7 +1,7 @@
-import "./Footer.css"
-import Logo from "../../../Assets/Header/Logo.png"
-import CallIcon from "../../../Assets/Home-Page/Call.png"
-import WhatsappIcon from "../../../Assets/Home-Page/Whatsapp.png"
+import "./Footer.css";
+import Logo from "../../../Assets/Header/Logo.png";
+import CallIcon from "../../../Assets/Home-Page/Call.png";
+import WhatsappIcon from "../../../Assets/Home-Page/Whatsapp.png";
 
 function Footer() {
     return (

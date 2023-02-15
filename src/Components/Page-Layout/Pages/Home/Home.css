@@ -69,6 +69,12 @@
     height: 100%;
 }
 
+.Show-More-Button:active{
+    height: 115%;
+    margin-top: -4px;
+    margin-right: -6px;
+}
+
 .Content {
     padding-left: 33px;
     display: flex;
@@ -182,11 +188,6 @@
 }
 /* ******************************************************************/
 
-
-/* Styles 04 - Contact us with form */
-
-
-/* ******************************************************************/
 
 
 /* MEDIA QUERIES */

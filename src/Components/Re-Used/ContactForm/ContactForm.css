@@ -47,6 +47,17 @@ form {
     color: rgb(56, 56, 56);
 }
 
+.Talk-With-Us p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    color: rgb(100, 100, 100);
+}
+
+.Talk-With-Us span {
+    color: rgb(0, 0, 192);
+}
+
 form input, form textarea {
     font-size: 14px;
     padding-top: 4px;
@@ -82,7 +93,7 @@ form label {
 }
 
 .Contact-Image img {
-    width:50%;
+    width:40%;
 }
 
 .Contact-Call {

@@ -1,10 +1,11 @@
-import "./Enterprises.css"
+import "./Enterprises.css";
+
 import PageTitle from "../../../Re-Used/PageTitle/PageTitle";
 import BulletList from "../../../Re-Used/BulletList/BulletList";
 import DarkList from "../../../Re-Used/DarkList/DarkList";
 import ContactForm from "../../../Re-Used/ContactForm/ContactForm";
-import EnterprisesImage from "../../../../Assets/Enterprises-Page/Enterprises.png"
-import PartnerImage from "../../../../Assets/Enterprises-Page/Partners.png"
+import EnterprisesImage from "../../../../Assets/Enterprises-Page/Enterprises.png";
+import PartnerImage from "../../../../Assets/Enterprises-Page/Partners.png";
 
 function Enterprises() {
   const title = {
@@ -88,7 +89,11 @@ function Enterprises() {
               </div>
           </div>
 
-          <ContactForm></ContactForm>
+            <ContactForm 
+                SubTitle='Speak with the Founder - Shaveen Fernando (+94) 0777428427 ' 
+                ContactTitle='Or drop an Email' 
+                Email='shaveen@saltglobal.org'>
+            </ContactForm>
       </div>
     );
 }

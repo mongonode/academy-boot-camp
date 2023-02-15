@@ -1,31 +1,34 @@
 import "./Home.css"
+import { useNavigate } from 'react-router-dom';
 
-import StudentBenifits from "./BenifitTabs/BenifitContents/Student-Benifits/StudentBenifits"
-import EnterprisesBenifits from "./BenifitTabs/BenifitContents/Enterprises-Benifits/EnterprisesBenifits"
-import EducatorBenifits from "./BenifitTabs/BenifitContents/Educator-Benifits/EducatorBenifits"
+import StudentBenifits from "./BenifitTabs/BenifitContents/Student-Benifits/StudentBenifits";
+import EnterprisesBenifits from "./BenifitTabs/BenifitContents/Enterprises-Benifits/EnterprisesBenifits";
+import EducatorBenifits from "./BenifitTabs/BenifitContents/Educator-Benifits/EducatorBenifits";
 
-import BannerImage from "../../../../Assets/Home-Page/Banner-Image.png"
-import ButtonCircle from "../../../../Assets/Home-Page/Button-Circle.png"
+import BannerImage from "../../../../Assets/Home-Page/Banner-Image.png";
+import ButtonCircle from "../../../../Assets/Home-Page/Button-Circle.png";
 
-import JobsIcon from "../../../../Assets/Home-Page/Jobs-Icon.png"
-import DigitalIcon from "../../../../Assets/Home-Page/Digital-Icon.png"
-import PayIcon from "../../../../Assets/Home-Page/Pay-Icon.png"
+import JobsIcon from "../../../../Assets/Home-Page/Jobs-Icon.png";
+import DigitalIcon from "../../../../Assets/Home-Page/Digital-Icon.png";
+import PayIcon from "../../../../Assets/Home-Page/Pay-Icon.png";
 
-import BenifitBox from "./BenifitTabs/BenifitBox/BenifitBox"
-import ContactForm from "../../../Re-Used/ContactForm/ContactForm"
+import BenifitBox from "./BenifitTabs/BenifitBox/BenifitBox";
+import ContactForm from "../../../Re-Used/ContactForm/ContactForm";
 
 function Home() {
 
+    const navigate = useNavigate();
+
     const to_Learners =()=> {
-        //Navigate learners page
+        navigate('/learners');
     }
 
     const to_Enterprises =()=> {
-        //Navigate Enterprises page
+        navigate('/enterprises');
     }
 
     const to_Educators =()=> {
-        //Navigate Educator page
+        navigate('/educators');
     }
 
     const contents = [
@@ -158,7 +161,10 @@ function Home() {
                 </div>
             </div>
 
-            <ContactForm></ContactForm>
+            <ContactForm 
+                SubTitle='Connect with our mentors & consultants to learn what is best for you.' 
+                ContactTitle='OR feel free to talk to us and decide'>
+            </ContactForm>
         </div>
     );
 }
