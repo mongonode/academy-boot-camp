@@ -6,6 +6,7 @@ import EducatorBenifits from "../Page-Layout/Pages/Home/BenifitTabs/BenifitConte
 import Learners from "../Page-Layout/Pages/Learners/Learners";
 import Educators from "../Page-Layout/Pages/Educators/Educators"
 import Enterprises from "../Page-Layout/Pages/Enterprises/Enterprises";
+import AboutUs from "../Page-Layout/Pages/AboutUs/AboutUs";
 
 function Routings() {
     return (
@@ -21,6 +22,7 @@ function Routings() {
             <Route path='/learners' element={<Learners/>}></Route>
             <Route path='/educators' element={<Educators/>}></Route>
             <Route path='/enterprises' element={<Enterprises/>}></Route>
+            <Route path='/about' element={<AboutUs/>}></Route>
           </Routes>
         </Router>
       </div>

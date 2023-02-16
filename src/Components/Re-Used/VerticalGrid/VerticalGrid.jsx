@@ -54,7 +54,7 @@ const VerticalGrid =()=> {
     return (
         <div className="VerticalGrid">
             <div className="row g-0">
-                <div className="col-3">
+                <div className="col-5 col-sm-4 col-md-3">
                     <div className="Main-Buttons">
                         {titleButtons.map((tab) =>(
                             <div key={titleButtons.id} className={clicked[tab.id-1]? "Tab-Button-Clicked":"Tab-Button-Not-Clicked"} type="button" onClick={()=>click_Action(tab.id)}>
@@ -65,7 +65,7 @@ const VerticalGrid =()=> {
                     </div>
                 </div>
 
-                <div className="col-9">
+                <div className="col-7 col-sm-8 col-md-9">
 
                     {clicked[0] && (
                         <div className="Grid-Contents row g-0">

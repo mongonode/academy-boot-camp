@@ -14,7 +14,7 @@ const pageLinks = (
         <li><a href="/educators">Educators</a></li>
         <li><a href="/enterprises">Enterprises</a></li>
         <li><a href="/">Talent Pool</a></li>
-        <li><a href="/">About Us</a></li>
+        <li><a href="/about">About Us</a></li>
     </ul>
 )
 
