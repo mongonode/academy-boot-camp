@@ -2,7 +2,7 @@ import "./DataBox.css"
 
 const DataBox =( props )=> {
     return (
-        <div className="Data-Box pt-3 pb-0">
+        <div className="Data-Box pt-3 pb-0" type="button" onClick={props.Press_Action}>
             <div className="Data-Title">
                 <h3>{props.Title}</h3>
                 <h4 className="py-1">{props.SubTitle}</h4>

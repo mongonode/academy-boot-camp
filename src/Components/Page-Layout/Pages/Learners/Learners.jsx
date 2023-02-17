@@ -5,6 +5,8 @@ import VerticalGrid from "../../../Re-Used/VerticalGrid/VerticalGrid";
 import ContactForm from "../../../Re-Used/ContactForm/ContactForm";
 import Enroll from "../../../../Assets/Learners-Page/Enroll.png"
 import Guidence from "../../../../Assets/Learners-Page/Guidence.png"
+import DarkButton from "../../../Re-Used/DarkButton/DarkButton";
+import LightButton from "../../../Re-Used/LightButton/LightButton";
 
 function Learners() {
 
@@ -35,63 +37,6 @@ function Learners() {
         'Attend online career discussions to meet other students, interact with mentors, resolve burning career issues, and broaden your understanding of the field.'
     ]
 
-    const pageLinks = [
-        {
-            title: 'FIND WORK',
-            navigate:[
-                {
-                    name:'TechJobz.co - Source Sri lanka’s top tech talent.',
-                    link:'https://www.techjobz.co/'
-                },
-
-                {
-                    name:'TechJobz.co - Source Sri lanka’s top tech talent.',
-                    link:'https://www.techjobz.co/'
-                },
-
-                {
-                    name:'TechJobz.co - Source Sri lanka’s top tech talent.',
-                    link:'https://www.techjobz.co/'
-                },
-
-                {
-                    name:'TechJobz.co - Source Sri lanka’s top tech talent.',
-                    link:'https://www.techjobz.co/'
-                },
-
-                {
-                    name:'TechJobz.co - Source Sri lanka’s top tech talent.',
-                    link:'https://www.techjobz.co/'
-                }
-            ]
-        },
-
-        {
-            title: 'LEARN FREE',
-            navigate:[
-                {
-                    name:'Bento - Learn to code and be a self-taught expert developer',
-                    link:'https://bento.io/'
-                },
-
-                {
-                    name:'CareerFoundry | The Online School for Your Career in Tech',
-                    link:'https://careerfoundry.com/'
-                },
-
-                {
-                    name:'Bento - Learn to code and be a self-taught expert developer',
-                    link:'https://bento.io/'
-                },
-
-                {
-                    name:'CareerFoundry | The Online School for Your Career in Tech',
-                    link:'https://careerfoundry.com/'
-                },
-            ]
-        },
-    ]
-
     return (
       <div className="Learners">
           <div className="row g-0 Title-Learners">
@@ -114,29 +59,11 @@ function Learners() {
               <VerticalGrid></VerticalGrid>
           </div>
 
-          <div className="Pages px-4 px-sm-5 pt-3 pb-4  py-md-5 mt-5 mb-3">
-            <div className="row">
-                { pageLinks.map((link) => (
-                    <div className="col-12 col-md-6 pt-4 pt-md-0">
-                        <div className="Link-Box px-4 pt-3 pb-2">
-                            <h5>{link.title}</h5>
-
-                            <ul className="Page-Link-List">
-                                {link.navigate.map((target) => (
-                                    <li>{target.name}&nbsp;-&nbsp;<a href={target.link}>visit</a></li>
-                                ))}
-                            </ul> 
-                        </div>
-                    </div>
-                ))}   
-            </div>
-          </div>
-
-          <div className="Guidence-Services pt-3 py-4 my-4">
-                <div className="row">
+          <div className="Guidence-Services bg-light mt-5 pt-5 py-0 my-0">
+                <div className="row g-0 pb-4">
                     <div className="col-12 col-md-7 px-4 px-sm-5 Guidence-Box">
                         <div className="Guidence-Description">
-                            <h2>CAREER <span>GUIDANCE SERVICES</span> FOR OUR STUDENT</h2>
+                            <h2>CAREER <span>GUIDANCE SERVICES</span> FOR OUR STUDENTS</h2>
                             <p>We provide career preparation for all our students who are successfully complete the training within the allocated timeframe. Our career services team will help you for 6 months in the job search process.</p>
                         </div>
                         
@@ -146,11 +73,25 @@ function Learners() {
                     </div>
 
                     <div className="col-12 col-md-5 px-4 px-sm-5 px-md-0 pe-md-5 py-4 py-md-0">
-                        <div className="Guidence-List px-3 pt-2 mt-0 mt-md-4">
+                        <div className="Guidence-List px-3 pt-2 pb-1 mt-0 mt-md-4 bg-white">
                             <BulletList List={guidence}></BulletList>
                         </div>
                     </div>
                 </div>
+          </div>
+
+          <div className="Navigations px-5 py-3">
+            <div className="col-8">
+                <div className="row g-0">
+                    <div className="col-6 pe-1">
+                        <DarkButton Title='CLICK HERE TO FIND WORKS'></DarkButton>
+                    </div>
+
+                    <div className="col-6 ps-1">
+                        <LightButton Title='CLICK HERE TO LEARN FREE'></LightButton>
+                    </div>
+                </div>
+            </div>   
           </div>
 
             <ContactForm 

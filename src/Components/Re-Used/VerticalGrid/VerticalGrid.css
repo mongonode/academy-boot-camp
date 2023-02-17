@@ -53,22 +53,26 @@
     margin-right: 10px;
 }
 
-.Grid-Contents {
-    display: flex;
+.Grid-Scroll {
     height: 100%;
     width: 100%;
     overflow-x: scroll;
 }
 
-.Grid-Contents::-webkit-scrollbar{
+.Grid-Contents {
+    display: flex;
+    width: 100%;
+}
+
+.Grid-Scroll::-webkit-scrollbar{
     height: 10px;
 }
 
-.Grid-Contents::-webkit-scrollbar-track{
+.Grid-Scroll::-webkit-scrollbar-track{
     background-color: rgb(211, 210, 210)
 }
 
-.Grid-Contents::-webkit-scrollbar-thumb {
+.Grid-Scroll::-webkit-scrollbar-thumb {
     background-color: rgb(0, 102, 170);
     border-radius: 20px;
 }

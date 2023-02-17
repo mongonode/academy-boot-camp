@@ -1,90 +1,66 @@
 import "./VerticalGrid.css"
 import { useState, useEffect } from "react"
+import { useNavigate } from 'react-router-dom';
 import DataBox from "../DataBox/DataBox"
+import CourseData from "../../Static-Database/CourseData/CourseData";
 
 const VerticalGrid =()=> {
 
+    const navigate = useNavigate();
+    const learn = CourseData;
+
     const[clicked, setClicked] = useState([true, false, false, false, false, false])
+    const[courses, setCourses] = useState(learn[0].courses)
+    const[category, setCategory] = useState(1)
 
-    const click_Action =(id)=> {
-        asign_Clicked(id);
+    const click_Action =( selected )=> {
+        asign_Clicked(selected.category_ID);
+        setCourses(selected.courses);
     }
 
-    const asign_Clicked =(selected)=> {
+    const asign_Clicked =( id )=> {
         const newClicked = [false, false, false, false, false, false];
-        newClicked[selected-1] = true;
+        newClicked[id-1] = true;
         setClicked(newClicked);
+        setCategory(id);
     }
 
-    const titleButtons = [
-        {id:1, title:'CODING', action:''},
-        // {id:2, title:'QUALITY', action:''},
-        {id:4, title:'DATA', action:''},
-        {id:3, title:'DESIGNING', action:''},
-        {id:5, title:'ENTREPRENEURSHIP', action:''},
-        // {id:6, title:'TECH SALES', action:''},
-    ]
-
-    const tranings = [
-        {
-            title:'WEB DEVELOPMENT',
-            subTitle:'FOUNDATION',
-            detail:'Build foundational web development skills with HTML, CSS, JAVASCRIPT.'
-        },
-
-        {
-            title:'WEB DEVELOPMENT',
-            subTitle:'INTERMEDIATE',
-            detail:'Build powerful commercial web sites, with frameworks'
-        },
-
-        {
-            title:'WEB DEVELOPMENT',
-            subTitle:'FULL STACK',
-            detail:'Learn all the skills, tools, & processes you need to become a web developer'
-        },
-
-        {
-            title:'SOFTWARE ENGINEERING',
-            subTitle:'FOUNDATION',
-            detail:'Best for developers to sharpen their engineering mindset.'
-        },
-    ]
+    const selected_Course=( id )=> {
+        navigate(`/selected-course?category=${category}&course=${id}`);
+    }
 
     return (
         <div className="VerticalGrid">
             <div className="row g-0">
                 <div className="col-5 col-sm-4 col-md-3">
                     <div className="Main-Buttons">
-                        {titleButtons.map((tab) =>(
-                            <div key={titleButtons.id} className={clicked[tab.id-1]? "Tab-Button-Clicked":"Tab-Button-Not-Clicked"} type="button" onClick={()=>click_Action(tab.id)}>
-                                <div className={clicked[tab.id-1]? "Clicked":"Not-Clicked"}>&nbsp;</div>
-                                <div className={clicked[tab.id-1]? "Active-Tab":"Single-Tab"}>{tab.title}</div>
+                        {learn.map((course) =>(
+                            <div key={learn.category_ID} className={clicked[course.category_ID-1]? "Tab-Button-Clicked":"Tab-Button-Not-Clicked"} type="button" onClick={()=> click_Action(course)}>
+                                <div className={clicked[course.category_ID-1]? "Clicked":"Not-Clicked"}>&nbsp;</div>
+                                <div className={clicked[course.category_ID-1]? "Active-Tab":"Single-Tab"}>{course.category_Name}</div>
                             </div>
                         ))}
                     </div>
                 </div>
 
                 <div className="col-7 col-sm-8 col-md-9">
-                    {clicked[0] && (
-                        <div className="Grid-Contents">
-                            {tranings.map((traning) => (
-                                <div className="col-12 col-md-6 col-lg-6 col-xl-4 px-3 px-sm-3 px-md-0 ps-md-3 pe-md-3 mt-3 pt-2 pt-md-0">
-                                    <DataBox Title={traning.title} SubTitle={traning.subTitle} Content={traning.detail}></DataBox>
-                                </div>
-                            ))}
-                        </div>
-                    )}
+                    <div className="Grid-Scroll">
 
-    
-                            
-                        
+                        {clicked.map((_isClicked) => (
+                            <div>
+                                {_isClicked && (
+                                    <div className="Grid-Contents">
+                                        {courses.map((course) => (
+                                            <div className="col-12 col-md-6 col-lg-6 col-xl-4 px-3 px-sm-3 px-md-0 ps-md-3 pe-md-3 mt-3 pt-2 pt-md-0">
+                                                <DataBox Title={course.title} SubTitle={course.level} Content={course.introduction} Press_Action={()=> selected_Course(course.id)}></DataBox>
+                                            </div>
+                                        ))}
+                                    </div>
+                                )}
+                            </div>
+                        ))}
 
-                    {clicked[1] && (<div><h1>Quality Contents</h1></div>)}
-                    {clicked[2] && (<div><h1>Design Contents</h1></div>)}
-                    {clicked[3] && (<div><h1>Data Contents</h1></div>)}
-                    {clicked[4] && (<div><h1>ENTREPRENEURSHIP Contents</h1></div>)}
-                    {clicked[5] && (<div><h1></h1></div>)}
+                     </div>
                 </div>
             </div>
         </div>
