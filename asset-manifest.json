@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/academy-boot-camp/static/css/main.9ac48102.css",
+    "main.js": "/academy-boot-camp/static/js/main.713910a8.js",
+    "static/js/787.cd4453d0.chunk.js": "/academy-boot-camp/static/js/787.cd4453d0.chunk.js",
+    "static/media/Enterprises.png": "/academy-boot-camp/static/media/Enterprises.845b33090367953aaaa7.png",
+    "static/media/Contact.png": "/academy-boot-camp/static/media/Contact.9ac183bb3d65d2afc355.png",
+    "static/media/Banner-Image.png": "/academy-boot-camp/static/media/Banner-Image.f32589456da0707d8752.png",
+    "static/media/Banner-Background.jpg": "/academy-boot-camp/static/media/Banner-Background.d84532377b1bf988174a.jpg",
+    "static/media/Contact-Background.jpg": "/academy-boot-camp/static/media/Contact-Background.1f0d3880621e35b1d449.jpg",
+    "static/media/Enroll.png": "/academy-boot-camp/static/media/Enroll.2acd960abf0e7904f21c.png",
+    "static/media/Whatsapp.png": "/academy-boot-camp/static/media/Whatsapp.149c09a9fdcfc94bfea3.png",
+    "static/media/Jobs-Icon.png": "/academy-boot-camp/static/media/Jobs-Icon.fd78028321da8e3a4641.png",
+    "static/media/Guidence.png": "/academy-boot-camp/static/media/Guidence.2121f684de1191d9bd15.png",
+    "static/media/Background.jpg": "/academy-boot-camp/static/media/Background.46667db05cf9470fbc74.jpg",
+    "static/media/Digital-Icon.png": "/academy-boot-camp/static/media/Digital-Icon.544ee64f0bf0ed7a5377.png",
+    "static/media/Partners.png": "/academy-boot-camp/static/media/Partners.f48be8645d646127bcae.png",
+    "static/media/Vision.png": "/academy-boot-camp/static/media/Vision.e958140af8358798c900.png",
+    "static/media/Toggler-Background.png": "/academy-boot-camp/static/media/Toggler-Background.35b95de5bdfd8fb1e978.png",
+    "static/media/Logo.png": "/academy-boot-camp/static/media/Logo.e81dd537acf01f00258e.png",
+    "static/media/Pay-Icon.png": "/academy-boot-camp/static/media/Pay-Icon.e114c3f0da6033f93e7a.png",
+    "static/media/Toggler.png": "/academy-boot-camp/static/media/Toggler.d4b2111e9bba344c47a0.png",
+    "static/media/Benifits-Background.jpg": "/academy-boot-camp/static/media/Benifits-Background.24d4884d5ef57b335788.jpg",
+    "static/media/Call.png": "/academy-boot-camp/static/media/Call.6d762e082919dc440d32.png",
+    "static/media/Button-Circle.png": "/academy-boot-camp/static/media/Button-Circle.38ae1876b404cf9148ea.png",
+    "index.html": "/academy-boot-camp/index.html",
+    "main.9ac48102.css.map": "/academy-boot-camp/static/css/main.9ac48102.css.map",
+    "main.713910a8.js.map": "/academy-boot-camp/static/js/main.713910a8.js.map",
+    "787.cd4453d0.chunk.js.map": "/academy-boot-camp/static/js/787.cd4453d0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ac48102.css",
+    "static/js/main.713910a8.js"
+  ]
+}
