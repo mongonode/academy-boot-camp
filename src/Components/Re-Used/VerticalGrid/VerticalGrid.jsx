@@ -66,14 +66,14 @@ const VerticalGrid =()=> {
                 </div>
 
                 <div className="col-7 col-sm-8 col-md-9">
-                {clicked[0] && (
-                    <div className="Grid-Contents">
-                        {tranings.map((traning) => (
-                            <div className="col-12 col-md-6 col-lg-6 col-xl-4 px-3 px-sm-3 px-md-0 ps-md-3 pe-md-3 mt-3 pt-2 pt-md-0">
-                                <DataBox Title={traning.title} SubTitle={traning.subTitle} Content={traning.detail}></DataBox>
-                            </div>
-                        ))}
-                    </div>
+                    {clicked[0] && (
+                        <div className="Grid-Contents">
+                            {tranings.map((traning) => (
+                                <div className="col-12 col-md-6 col-lg-6 col-xl-4 px-3 px-sm-3 px-md-0 ps-md-3 pe-md-3 mt-3 pt-2 pt-md-0">
+                                    <DataBox Title={traning.title} SubTitle={traning.subTitle} Content={traning.detail}></DataBox>
+                                </div>
+                            ))}
+                        </div>
                     )}
 
     

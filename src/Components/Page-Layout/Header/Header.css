@@ -92,6 +92,13 @@
     margin-left: 3px;
 }
 
+.Toggler-Menu-to-Mobiles img {
+    position: absolute;
+    height: 180px;
+    right: 0px;
+    bottom: 0px;
+}
+
 #Sign-Btn {
     width: 140px;
     height: 40px;
