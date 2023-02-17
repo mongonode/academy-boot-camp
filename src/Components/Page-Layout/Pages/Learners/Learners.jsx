@@ -136,7 +136,7 @@ function Learners() {
                 <div className="row">
                     <div className="col-12 col-md-7 px-4 px-sm-5 Guidence-Box">
                         <div className="Guidence-Description">
-                            <h2>CAREER <span>GUIDANCE SERVICES</span> FOR OUR STUDENTS</h2>
+                            <h2>CAREER <span>GUIDANCE SERVICES</span> FOR OUR STUDENT</h2>
                             <p>We provide career preparation for all our students who are successfully complete the training within the allocated timeframe. Our career services team will help you for 6 months in the job search process.</p>
                         </div>
                         
