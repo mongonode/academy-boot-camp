@@ -8,7 +8,7 @@ const DataBox =( props )=> {
                 <h4 className="py-1">{props.SubTitle}</h4>
             </div>
             
-            <p className="pt-2 px-4">{props.Content}</p>
+            <p className="pt-2 px-2 px-sm-4">{props.Content}</p>
         </div>
     )
 }

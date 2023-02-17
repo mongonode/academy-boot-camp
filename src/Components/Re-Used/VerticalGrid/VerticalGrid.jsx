@@ -28,26 +28,26 @@ const VerticalGrid =()=> {
     const tranings = [
         {
             title:'WEB DEVELOPMENT',
-            subTitle:'(Foundation)',
-            detail:'Learn foundational web development skills.'
+            subTitle:'FOUNDATION',
+            detail:'Build foundational web development skills with HTML, CSS, JAVASCRIPT.'
         },
 
         {
             title:'WEB DEVELOPMENT',
-            subTitle:'(Advanced)',
-            detail:'Build powerful commercial web sites, apps'
+            subTitle:'INTERMEDIATE',
+            detail:'Build powerful commercial web sites, with frameworks'
+        },
+
+        {
+            title:'WEB DEVELOPMENT',
+            subTitle:'FULL STACK',
+            detail:'Learn all the skills, tools, & processes you need to become a web developer'
         },
 
         {
             title:'SOFTWARE ENGINEERING',
-            subTitle:'(Foundation)',
-            detail:'Se foundation'
-        },
-
-        {
-            title:'SOFTWARE ENGINEERING',
-            subTitle:'(Advanced)',
-            detail:'Learn object-oriented programming essentials'
+            subTitle:'FOUNDATION',
+            detail:'Best for developers to sharpen their engineering mindset.'
         },
     ]
 
@@ -59,32 +59,32 @@ const VerticalGrid =()=> {
                         {titleButtons.map((tab) =>(
                             <div key={titleButtons.id} className={clicked[tab.id-1]? "Tab-Button-Clicked":"Tab-Button-Not-Clicked"} type="button" onClick={()=>click_Action(tab.id)}>
                                 <div className={clicked[tab.id-1]? "Clicked":"Not-Clicked"}>&nbsp;</div>
-                                <div className="Single-Tab">{tab.title}</div>
+                                <div className={clicked[tab.id-1]? "Active-Tab":"Single-Tab"}>{tab.title}</div>
                             </div>
                         ))}
                     </div>
                 </div>
 
-                <div className="col-7 col-sm-8 col-md-9 px-3">
+                <div className="col-7 col-sm-8 col-md-9">
+                {clicked[0] && (
                     <div className="Grid-Contents">
                         {tranings.map((traning) => (
-                            <div className="col-sm-12 col-md-6 col-lg-6 col-xl-4 px-3 px-md-0 mt-3">
+                            <div className="col-12 col-md-6 col-lg-6 col-xl-4 px-3 px-sm-3 px-md-0 ps-md-3 pe-md-3 mt-3 pt-2 pt-md-0">
                                 <DataBox Title={traning.title} SubTitle={traning.subTitle} Content={traning.detail}></DataBox>
                             </div>
                         ))}
                     </div>
-
-                    {/* {clicked[0] && (
-                        <div className="Grid-Contents row g-0">
-                            
-                        </div>
                     )}
+
+    
+                            
+                        
 
                     {clicked[1] && (<div><h1>Quality Contents</h1></div>)}
                     {clicked[2] && (<div><h1>Design Contents</h1></div>)}
                     {clicked[3] && (<div><h1>Data Contents</h1></div>)}
                     {clicked[4] && (<div><h1>ENTREPRENEURSHIP Contents</h1></div>)}
-                    {clicked[5] && (<div><h1></h1></div>)} */}
+                    {clicked[5] && (<div><h1></h1></div>)}
                 </div>
             </div>
         </div>

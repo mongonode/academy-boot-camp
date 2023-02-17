@@ -9,12 +9,12 @@ import TogglerBackground from "../../../Assets/Header/Toggler-Background.png";
 
 const pageLinks = (
     <ul className='d-lg-flex'>
-        <li><a href="/">Home</a></li>
-        <li><a href="/learners">Learners</a></li>
-        <li><a href="/educators">Educators</a></li>
-        <li><a href="/enterprises">Enterprises</a></li>
-        <li><a href="/">Talent Pool</a></li>
-        <li><a href="/about">About Us</a></li>
+        <li><a href="#/">Home</a></li>
+        <li><a href="#/learners">Learners</a></li>
+        <li><a href="#/educators">Educators</a></li>
+        <li><a href="#/enterprises">Enterprises</a></li>
+        <li><a href="#/">Talent Pool</a></li>
+        <li><a href="#/about">About Us</a></li>
     </ul>
 )
 

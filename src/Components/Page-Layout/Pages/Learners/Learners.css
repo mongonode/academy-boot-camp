@@ -2,6 +2,12 @@
     display: flex;
 }
 
+.Title-Learners {
+    border-bottom-style: solid ;
+    border-width: 1px;
+    border-color: rgb(206, 206, 206);
+}
+
 .Why-Enroll {
     margin-top: -20px;
     border-radius: 8px;
@@ -18,17 +24,77 @@
     background-color: rgb(240, 240, 240);
 }
 
-.Tranings {
-    box-shadow: 0px 0px 3px 1px #000000bd;
-}
-
-.Tranings h2 {
+.Tranings h2, .Guidence-Description h2 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
+    font-size: 28px;
 }
 
-.Tranings span {
+.Tranings span, .Guidence-Description span {
     color: rgb(0, 58, 219);
+}
+
+.Guidence-List {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 6px;
+    border-color: rgba(82, 163, 255, 0.521);
+}
+
+.Guidence-Description p {
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 15px;
+    color: rgb(97, 97, 97);
+}
+
+.Guidence-Box img {
+    width: 75%;
+}
+
+.Link-Box {
+    background-color: rgb(18,115,204);
+    border-radius: 7px;
+    box-shadow: 2px 2px 3px 1px #0000003d;
+}
+
+.Link-Box h5 {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.Pages {
+    background-color: rgb(240,240,240);
+    box-shadow: 0px 0px 1px 1px #02007c36;
+}
+
+.Page-Link-List {
+    padding-left: 19px;
+}
+
+.Page-Link-List li {
+    font-size: 15px;
+    color: rgb(238, 238, 238);
+}
+
+.Page-Link-List li a {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(162, 219, 255);
+}
+
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+    .Tranings h2, .Guidence-Description h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .Guidence-Description p {
+        font-size: 13px;
+    }
+
+    .Page-Link-List li {
+        font-size: 13px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 4576px) {
@@ -45,6 +111,5 @@
     .Tranings {
         margin-top: 1px;
         background-color: rgb(255, 255, 255);
-        box-shadow: 0px 0px 3px 1px #00000059;
     }
 }

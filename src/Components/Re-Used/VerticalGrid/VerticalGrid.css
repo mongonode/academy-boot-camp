@@ -36,6 +36,12 @@
     font-weight: 500;
 }
 
+.Active-Tab {
+    font-size: 15px;
+    font-weight: 500;
+    color: blue;
+}
+
 .Not-Clicked {
     height: 100%;
     margin-right: 10px;
@@ -51,5 +57,33 @@
     display: flex;
     height: 100%;
     width: 100%;
-    overflow-x: auto;
+    overflow-x: scroll;
+}
+
+.Grid-Contents::-webkit-scrollbar{
+    height: 10px;
+}
+
+.Grid-Contents::-webkit-scrollbar-track{
+    background-color: rgb(211, 210, 210)
+}
+
+.Grid-Contents::-webkit-scrollbar-thumb {
+    background-color: rgb(62, 160, 226);
+    border-radius: 20px;
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+    .Single-Tab {
+        font-size: 11px;
+    }
+
+    .Active-Tab { 
+        font-size: 12px;
+    }
+
+    .Grid-Contents::-webkit-scrollbar{
+        height: 5px;
+    }
 }

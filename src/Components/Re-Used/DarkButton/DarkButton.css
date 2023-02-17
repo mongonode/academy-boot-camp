@@ -1,0 +1,10 @@
+.DarkButton {
+    border-style: none;
+    background-color: rgba(0, 102, 226, 0.932);
+    height: 34px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.973);
+}
