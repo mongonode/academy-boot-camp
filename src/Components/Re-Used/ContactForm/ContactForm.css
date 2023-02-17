@@ -1,3 +1,7 @@
+.ContactForm {
+    width: 100%;
+}
+
 .Contect-Us {
     background-image: url('../../../Assets/Home-Page/Contact-Background.jpg');
     background-size: cover;

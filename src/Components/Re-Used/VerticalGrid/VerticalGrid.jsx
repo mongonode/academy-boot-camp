@@ -18,11 +18,11 @@ const VerticalGrid =()=> {
 
     const titleButtons = [
         {id:1, title:'CODING', action:''},
-        {id:2, title:'QUALITY', action:''},
-        {id:3, title:'DESIGN', action:''},
+        // {id:2, title:'QUALITY', action:''},
         {id:4, title:'DATA', action:''},
-        {id:5, title:'CYBER SECURITY', action:''},
-        {id:6, title:'TECH SALES', action:''},
+        {id:3, title:'DESIGNING', action:''},
+        {id:5, title:'ENTREPRENEURSHIP', action:''},
+        // {id:6, title:'TECH SALES', action:''},
     ]
 
     const tranings = [
@@ -65,23 +65,26 @@ const VerticalGrid =()=> {
                     </div>
                 </div>
 
-                <div className="col-7 col-sm-8 col-md-9">
+                <div className="col-7 col-sm-8 col-md-9 px-3">
+                    <div className="Grid-Contents">
+                        {tranings.map((traning) => (
+                            <div className="col-sm-12 col-md-6 col-lg-6 col-xl-4 px-3 px-md-0 mt-3">
+                                <DataBox Title={traning.title} SubTitle={traning.subTitle} Content={traning.detail}></DataBox>
+                            </div>
+                        ))}
+                    </div>
 
-                    {clicked[0] && (
+                    {/* {clicked[0] && (
                         <div className="Grid-Contents row g-0">
-                            {tranings.map((traning) => (
-                                <div className="col-3 px-4 py-4">
-                                    <DataBox Title={traning.title} SubTitle={traning.subTitle} Content={traning.detail}></DataBox>
-                                </div>
-                            ))}
+                            
                         </div>
                     )}
 
                     {clicked[1] && (<div><h1>Quality Contents</h1></div>)}
                     {clicked[2] && (<div><h1>Design Contents</h1></div>)}
                     {clicked[3] && (<div><h1>Data Contents</h1></div>)}
-                    {clicked[4] && (<div><h1>Cyber Security Contents</h1></div>)}
-                    {clicked[5] && (<div><h1>Tech Sales Contents</h1></div>)}
+                    {clicked[4] && (<div><h1>ENTREPRENEURSHIP Contents</h1></div>)}
+                    {clicked[5] && (<div><h1></h1></div>)} */}
                 </div>
             </div>
         </div>

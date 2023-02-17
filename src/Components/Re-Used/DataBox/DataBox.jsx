@@ -2,13 +2,13 @@ import "./DataBox.css"
 
 const DataBox =( props )=> {
     return (
-        <div className="DataBox">
-            <div>
-                <h3 className="mt-3">{props.Title}</h3>
-                <h4>{props.SubTitle}</h4>
+        <div className="Data-Box pt-3 pb-0">
+            <div className="Data-Title">
+                <h3>{props.Title}</h3>
+                <h4 className="py-1">{props.SubTitle}</h4>
             </div>
             
-            <p className="px-2">{props.Content}</p>
+            <p className="pt-2 px-4">{props.Content}</p>
         </div>
     )
 }

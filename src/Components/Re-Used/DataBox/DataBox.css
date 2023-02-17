@@ -1,35 +1,25 @@
-.DataBox {
+.Data-Box {
     background-color: rgb(255, 255, 255);
-    height: 100%;
+    border-radius: 5px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-radius: 8px;
-    box-shadow: 1px 1px 3px 1px #00000060;
+    box-shadow: 2px 2px 4px 1px #00000063;
 }
 
-.DataBox h3 {
+.Data-Title h3 {
+    font-size: 18px;
+    text-align: center;
+}
+
+.Data-Title h4 {
     font-size: 14px;
-    color: rgb(0, 51, 161);
     text-align: center;
-    font-weight: 500;
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
+    background-color:rgb(208, 239, 255)
 }
 
-.DataBox h4{
+.Data-Box p {
     font-size: 14px;
-    background: linear-gradient(to right, rgba(0, 102, 226, 0.932), rgb(60, 177, 255));
-    color: rgb(255, 255, 255);
     text-align: center;
-    font-weight: 500;
-    padding-top: 3px;
-    padding-bottom: 3px;
-}
-
-.DataBox p {
-    font-size: 13px;
-    font-weight: 500;
-    text-align: center;
-    color: rgb(105, 105, 105);
 }
