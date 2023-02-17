@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/academy-boot-camp/static/css/main.9ac48102.css",
-    "main.js": "/academy-boot-camp/static/js/main.713910a8.js",
+    "main.js": "/academy-boot-camp/static/js/main.ebf2df02.js",
     "static/js/787.cd4453d0.chunk.js": "/academy-boot-camp/static/js/787.cd4453d0.chunk.js",
     "static/media/Enterprises.png": "/academy-boot-camp/static/media/Enterprises.845b33090367953aaaa7.png",
     "static/media/Contact.png": "/academy-boot-camp/static/media/Contact.9ac183bb3d65d2afc355.png",
@@ -25,11 +25,11 @@
     "static/media/Button-Circle.png": "/academy-boot-camp/static/media/Button-Circle.38ae1876b404cf9148ea.png",
     "index.html": "/academy-boot-camp/index.html",
     "main.9ac48102.css.map": "/academy-boot-camp/static/css/main.9ac48102.css.map",
-    "main.713910a8.js.map": "/academy-boot-camp/static/js/main.713910a8.js.map",
+    "main.ebf2df02.js.map": "/academy-boot-camp/static/js/main.ebf2df02.js.map",
     "787.cd4453d0.chunk.js.map": "/academy-boot-camp/static/js/787.cd4453d0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9ac48102.css",
-    "static/js/main.713910a8.js"
+    "static/js/main.ebf2df02.js"
   ]
 }
