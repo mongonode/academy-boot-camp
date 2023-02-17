@@ -52,19 +52,18 @@
 }
 
 .Link-Box {
-    background-color: rgb(18,115,204);
-    border-radius: 7px;
-    box-shadow: 2px 2px 3px 1px #0000003d;
+    background-color: rgba(255, 255, 255, 0.979);
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px 1px #0000007c;
 }
 
 .Link-Box h5 {
-    color: rgb(255, 255, 255);
+    color: rgb(77, 77, 77);
     font-size: 18px;
 }
 
 .Pages {
-    background-color: rgb(240,240,240);
-    box-shadow: 0px 0px 1px 1px #02007c36;
+    background: linear-gradient(to right, rgb(0, 84, 187), rgb(72, 203, 255));
 }
 
 .Page-Link-List {
@@ -73,13 +72,12 @@
 
 .Page-Link-List li {
     font-size: 15px;
-    color: rgb(238, 238, 238);
+    color: rgb(100, 100, 100);
 }
 
 .Page-Link-List li a {
-    font-size: 16px;
-    font-weight: 500;
-    color: rgb(162, 219, 255);
+    font-size: 15px;
+    color: rgb(0, 114, 221);
 }
 
 @media only screen and (min-width: 0px) and (max-width: 576px) {

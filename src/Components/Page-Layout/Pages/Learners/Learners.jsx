@@ -132,7 +132,7 @@ function Learners() {
             </div>
           </div>
 
-          <div className="Guidence-Services pt-3 py-4">
+          <div className="Guidence-Services pt-3 py-4 my-4">
                 <div className="row">
                     <div className="col-12 col-md-7 px-4 px-sm-5 Guidence-Box">
                         <div className="Guidence-Description">
