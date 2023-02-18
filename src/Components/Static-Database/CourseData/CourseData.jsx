@@ -7,6 +7,85 @@ const CourseData = [
                 title:'WEB DEVELOPMENT',
                 level:'FOUNDATION',
                 introduction:'Build foundational web development skills with HTML, CSS, JAVASCRIPT',
+                description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+                join:'Above age 15, passionate about web development or software engineering, technology enthusiasts.',
+                duration:'8 - 12 weeks',
+                method:'Online (Live)',
+                language:'Sinhala/English',
+                attendance:'4 hours/week (2 days / week)',
+                fee:5000,
+                lessons:[
+                    'Uninitialized Variables',
+                    'Case Sensitivity in Variables',
+                    'Basic Math',
+                    'Increment and Decrement',
+                    'Decimal Numbers',
+                    'Multiply Two Decimals',
+                    'Divide Decimals',
+                    'Finding a Remainder',
+                    'Augmented Math Operations',
+                    'Declare String Variables',
+                    'Escaping Literal Quotes',
+                    'Quoting Strings with Single Quotes',
+                    'Escape Sequences',
+                    'Return a value from a function',
+                    'Undefined Value returned',
+                    'Assignment with a Returned Value',
+                    'Stand in Line',
+                    'Boolean Values',
+                    'If Statements',
+                    'Equality Operators',
+                    'And / Or Operators',
+                    'Else Statements',
+                    'Else If Statements',
+                    'Logical Order in If Else Statements',
+                    'Chaining If Else Statements',
+                    'Golf Code',
+                    'Switch Statements',
+                    'Returning Boolean Values from Functions',
+                    'Return Early Pattern for Functions',
+                    'Counting Cards',
+                    'Build Objects',
+                    'Dot Notation',
+                    'Bracket Notation',
+                    'Variables',
+                    'Updating Object Properties',
+                    'Add New Properties to Object',
+                    'Delete Properties from Object',
+                    'Objects for Lookups',
+                    'Testing Objects for Properties',
+                    'Manipulating Complex Objects',
+                    'Nested Objects',
+                    'Nested Arrays',
+                    'Record Collection',
+                    'While Loops',
+                    'For Loops',
+                    'Odd Numbers with a For Loop',
+                    'Count Backwards with a For Loop',
+                    'Iterate Through an Array with a For Loop',
+                    'Nesting For Loops',
+                    'Do...While Loops',
+                    'Profile Lookup',
+                    'Random Fractions and Whole Numbers',
+                    'parseInt Function',
+                    'Ternary Operator',
+                    'Multiple Ternary Operators',
+                    'var vs let',
+                    'const Keyword',
+                    'Mutate an Array Declared with const',
+                    'Prevent Object Mutation',
+                    'Arrow Functions',
+                    'Default Parameters',
+                    'Rest Operator',
+                    'Spread Operator',
+                    'DE structuring Assignment',
+                    'Template Literals',
+                    'Simple Fields',
+                    'Declarative Functions',
+                    'Class Syntax',
+                    'Getters and setters',
+                    'Import and export',
+                ]
             },
 
             {
@@ -38,11 +117,11 @@ const CourseData = [
         category_ID: 2,
         category_Name: 'DATA',
         courses : [
-            {
-                title:'WEB DEVELOPMENT',
-                level:'FOUNDATION',
-                introduction:'Build foundational web development skills with HTML, CSS, JAVASCRIPT.',
-            }
+            // {
+            //     title:'WEB DEVELOPMENT',
+            //     level:'FOUNDATION',
+            //     introduction:'Build foundational web development skills with HTML, CSS, JAVASCRIPT.',
+            // }
         ]
     },
 
@@ -52,11 +131,11 @@ const CourseData = [
         category_ID: 3,
         category_Name: 'DESIGNING',
         courses : [
-            {
-                title:'WEB DEVELOPMENT',
-                level:'FOUNDATION',
-                introduction:'Build foundational web development skills with HTML, CSS, JAVASCRIPT.',
-            }
+            // {
+            //     title:'WEB DEVELOPMENT',
+            //     level:'FOUNDATION',
+            //     introduction:'Build foundational web development skills with HTML, CSS, JAVASCRIPT.',
+            // }
         ]
     },
 
@@ -66,11 +145,11 @@ const CourseData = [
         category_ID: 4,
         category_Name: 'ENTREPRENEURSHIP',
         courses : [
-            {
-                title:'WEB DEVELOPMENT',
-                level:'FOUNDATION',
-                introduction:'Build foundational web development skills with HTML, CSS, JAVASCRIPT.',
-            }
+            // {
+            //     title:'WEB DEVELOPMENT',
+            //     level:'FOUNDATION',
+            //     introduction:'Build foundational web development skills with HTML, CSS, JAVASCRIPT.',
+            // }
         ]
     },
 

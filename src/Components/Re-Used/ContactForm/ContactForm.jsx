@@ -2,8 +2,49 @@ import "./ContactForm.css"
 import ContactIcon from "../../../Assets/Home-Page/Contact.png"
 import CallIcon from "../../../Assets/Home-Page/Call.png"
 import WhatsappIcon from "../../../Assets/Home-Page/Whatsapp.png"
+import InputField from "../InputField/InputField"
+import SubmitButton from "../SubmitButton/SubmitButton"
 
 const ContactForm =( props )=> {
+
+    const inputs = [
+        {
+            id:1,
+            name:'name',
+            label:'Name',
+            type:'text',
+            placeholder:'Your name'
+        },
+
+        {
+            id:2,
+            name:'email',
+            label:'E mail',
+            type:'text',
+            placeholder:'Your e-mail'
+        },
+
+        {
+            id:3,
+            name:'phone',
+            label:'Phone',
+            type:'text',
+            placeholder:'Your phone number'
+        },
+
+        {
+            id:4,
+            name:'whatsapp',
+            label:'Whatsapp',
+            type:'text',
+            placeholder:'Your whatsapp number'
+        },
+    ]
+
+    const get_InputDATA =()=> {
+
+    }
+
     return (
         <div className="ContactForm">
             <div className="Contect-Us">
@@ -43,43 +84,27 @@ const ContactForm =( props )=> {
                                 <form className="py-3 p-2 py-sm-4 px-sm-3 my-4 mx-3 me-md-4 me-lg-5">
                                     <div className="Input-Fields">
                                         <div className="row g-0">
-                                            <div className="col-12 col-sm-6 col-md-12 col-lg-6">
-                                                <div className="Single-Input px-1">
-                                                    <label For="">Name</label>
-                                                    <input type="text" placeholder="Your name"></input>
+                                            {inputs.map((field) => (
+                                                <div className="col-12 col-sm-6 col-md-12 col-lg-6 px-1 pb-1">
+                                                    <InputField 
+                                                            Label={field.label}
+                                                            Type={field.type}
+                                                            Placeholder={field.placeholder}
+                                                            Entered={get_InputDATA}>
+                                                    </InputField>
                                                 </div>
-                                            </div>
-
-                                            <div className="col-12 col-sm-6 col-md-12 col-lg-6">
-                                                <div className="Single-Input px-1">
-                                                    <label For="">E mail</label>
-                                                    <input type="text" placeholder="Your e-mail"></input>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div className="row g-0">
-                                            <div className="col-12 col-sm-6 col-md-12 col-lg-6">
-                                                <div className="Single-Input px-1">
-                                                    <label For="">Phone</label>
-                                                    <input type="text" placeholder="Your phone number"></input>
-                                                </div>
-                                            </div>
-
-                                            <div className="col-12 col-sm-6 col-md-12 col-lg-6">
-                                                <div className="Single-Input px-1">
-                                                    <label For="">Whatsapp</label>
-                                                    <input type="text" placeholder="Your whatsapp number"></input>
-                                                </div>
-                                            </div>
+                                            ))}
                                         </div>
                                     </div>
 
                                     <label className="mx-1" htmlFor="">Message</label>
                                     <textarea type="text" placeholder="Type your message" className="mx-1" name="" id="" cols="34" rows="3"></textarea>
                                    
-                                    <button className="mx-1 mt-3">SEND US</button>
+                                    <div className="px-1 pt-3">
+                                        <SubmitButton Title='SEND US'></SubmitButton>
+                                    </div>
                                 </form>
+
                                 <div className="Talk-With-Us d-block d-md-none">
                                     <p>{props.ContactTitle} <span>{props.Email}</span></p>
                                 

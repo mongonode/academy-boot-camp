@@ -16,17 +16,12 @@
     background-color: rgba(255, 255, 255, 0.925);
 }
 
-form {
+.ContactForm form {
     display: flex;
     flex-direction: column;
     border-radius: 6px;
     background-color: rgba(255, 255, 255, 0.801);
     box-shadow: 0px 0px 15px 1px #00000021;
-}
-
-.Single-Input {
-    display: flex;
-    flex-direction: column;
 }
 
 .Contact-Title {
@@ -62,7 +57,7 @@ form {
     color: rgb(0, 0, 192);
 }
 
-form input, form textarea {
+.ContactForm form textarea {
     font-size: 14px;
     padding-top: 4px;
     padding-bottom: 4px;
@@ -74,17 +69,10 @@ form input, form textarea {
     background-color: rgb(255, 255, 255);
 }
 
-form input::placeholder, form textarea::placeholder {
+form textarea::placeholder {
     font-size: 13px;
     font-style: italic;
     color: rgb(185, 185, 185);
-}
-
-form label {
-    margin-top: 7px;
-    margin-left: 1px;
-    font-size: 13px;
-    color: rgb(70, 70, 70);
 }
 
 .Text-Message {
@@ -117,13 +105,4 @@ form label {
 
 .Call p {
     font-size: 14px;
-}
-
-form button {
-    border-style: none;
-    background: linear-gradient(to right,  rgb(60, 151, 255), rgba(0, 102, 226, 0.932),   rgb(60, 151, 255));
-    height: 34px;
-    border-radius: 5px;
-    font-size: 14px;
-    color: rgb(255, 255, 255);
 }
