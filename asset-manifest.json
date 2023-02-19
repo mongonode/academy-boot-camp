@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/academy-boot-camp/static/css/main.9ac48102.css",
-    "main.js": "/academy-boot-camp/static/js/main.ebf2df02.js",
+    "main.css": "/academy-boot-camp/static/css/main.b1be746f.css",
+    "main.js": "/academy-boot-camp/static/js/main.78ec7a24.js",
     "static/js/787.cd4453d0.chunk.js": "/academy-boot-camp/static/js/787.cd4453d0.chunk.js",
     "static/media/Enterprises.png": "/academy-boot-camp/static/media/Enterprises.845b33090367953aaaa7.png",
     "static/media/Contact.png": "/academy-boot-camp/static/media/Contact.9ac183bb3d65d2afc355.png",
     "static/media/Banner-Image.png": "/academy-boot-camp/static/media/Banner-Image.f32589456da0707d8752.png",
     "static/media/Banner-Background.jpg": "/academy-boot-camp/static/media/Banner-Background.d84532377b1bf988174a.jpg",
     "static/media/Contact-Background.jpg": "/academy-boot-camp/static/media/Contact-Background.1f0d3880621e35b1d449.jpg",
-    "static/media/Enroll.png": "/academy-boot-camp/static/media/Enroll.2acd960abf0e7904f21c.png",
+    "static/media/Enroll.png": "/academy-boot-camp/static/media/Enroll.e87146423c1b2647e2f9.png",
     "static/media/Whatsapp.png": "/academy-boot-camp/static/media/Whatsapp.149c09a9fdcfc94bfea3.png",
     "static/media/Jobs-Icon.png": "/academy-boot-camp/static/media/Jobs-Icon.fd78028321da8e3a4641.png",
     "static/media/Guidence.png": "/academy-boot-camp/static/media/Guidence.2121f684de1191d9bd15.png",
@@ -24,12 +24,12 @@
     "static/media/Call.png": "/academy-boot-camp/static/media/Call.6d762e082919dc440d32.png",
     "static/media/Button-Circle.png": "/academy-boot-camp/static/media/Button-Circle.38ae1876b404cf9148ea.png",
     "index.html": "/academy-boot-camp/index.html",
-    "main.9ac48102.css.map": "/academy-boot-camp/static/css/main.9ac48102.css.map",
-    "main.ebf2df02.js.map": "/academy-boot-camp/static/js/main.ebf2df02.js.map",
+    "main.b1be746f.css.map": "/academy-boot-camp/static/css/main.b1be746f.css.map",
+    "main.78ec7a24.js.map": "/academy-boot-camp/static/js/main.78ec7a24.js.map",
     "787.cd4453d0.chunk.js.map": "/academy-boot-camp/static/js/787.cd4453d0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ac48102.css",
-    "static/js/main.ebf2df02.js"
+    "static/css/main.b1be746f.css",
+    "static/js/main.78ec7a24.js"
   ]
 }
