@@ -1,6 +1,7 @@
 import "./Course.css"
 import { useLocation } from 'react-router-dom';
 import { useState } from "react";
+import EnrollImg from "../../../../../Assets/Others/Enroll.png"
 import CourseData from "../../../../Static-Database/CourseData/CourseData";
 import InputField from "../../../../Re-Used/InputField/InputField";
 import RadioInput from "../../../../Re-Used/RadioInput/RadioInput";
@@ -101,6 +102,10 @@ function Course() {
                             <p>{dataSet.join}</p>
                         </div>
 
+                        <div className="Enroll-Image mb-3 d-none d-md-block ms-md-4 ms-lg-0">
+                            <img src={EnrollImg} alt="Enroll-Image" />
+                        </div>
+
                         <div className="Course-Details px-3 px-sm-4 px-lg-0">
                             <div className="row g-0 py-3 py-md-0">
                                 <div className="col-sm-6 d-flex justify-content-start justify-content-sm-center justify-content-md-start">
@@ -164,7 +169,7 @@ function Course() {
                 </div>
             </div>
 
-            <div className="Payments bg-light px-3 px-sm-5 px-md-4 px-lg-5 pt-4 pb-2 my-5">
+            <div className="Payments px-3 px-sm-5 px-md-4 px-lg-5 pt-4 pb-2 my-5">
                 <div className="row g-0">
                     <div className="col-12 col-md-5 col-lg-4 d-flex align-items-center">
                         <div className="Bank-Details mt-1 mb-3 my-sm-4 my-md-0">
@@ -181,7 +186,7 @@ function Course() {
                             
                             <div className="Advice">
                                 <div className="Advice-Title">
-                                    <h6>Enroll</h6>
+                                    <h6>Enroll :</h6>
                                 </div>
 
                                 <div className="Advice-Details">
