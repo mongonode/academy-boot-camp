@@ -98,4 +98,12 @@
     .Footer-Content-Info p {
         color: rgb(94, 94, 94);
     }
+
+    .Footer-Content-Contact h4, .Footer-Content-Info h4 {
+        font-size: 18px;
+    }
+
+    .Footer-Content-Info p {
+        font-size: 13px;
+    }
 }

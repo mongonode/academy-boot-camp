@@ -7,6 +7,7 @@ import InputField from "../../../../Re-Used/InputField/InputField";
 import RadioInput from "../../../../Re-Used/RadioInput/RadioInput";
 import SubmitButton from "../../../../Re-Used/SubmitButton/SubmitButton";
 import HoriontalScroller from "../../../../Re-Used/HoriontalScroller/HoriontalScroller";
+import AdminData from "../../../../Static-Database/AdminData/AdminData";
 
 function Course() {
 
@@ -190,7 +191,7 @@ function Course() {
                                 </div>
 
                                 <div className="Advice-Details">
-                                    <p>Pay and send us the receipt via WhatsApp to <span>0742833337</span></p>
+                                    <p>Pay and send us the receipt via WhatsApp to <span>{AdminData.whatsapp}</span></p>
                                 </div>
                             </div>
 
@@ -200,7 +201,7 @@ function Course() {
                                 </div>
 
                                 <div className="Advice-Details">
-                                    <p>Contact our mentors for help <span>(Call hours weekdays 11 am – 6 pm)</span>, More Info: <span>0742833337</span></p>
+                                    <p>Contact our mentors for help <span>(Call hours weekdays 11 am – 6 pm)</span>, More Info: <span>{AdminData.call}</span></p>
                                 </div>
                             </div>
                         </div>

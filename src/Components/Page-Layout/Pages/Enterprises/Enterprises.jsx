@@ -9,10 +9,10 @@ import PartnerImage from "../../../../Assets/Enterprises-Page/Partners.png";
 
 function Enterprises() {
   const title = {
-    first: 'MAKE YOUR',
-    highlight:'PASSION PAY.',
-    next:'UNLIMITED GROWTH',
-    last:'AND EARNINGS'
+    first: 'BE PART OF AN',
+    highlight:'AMAZING JOURNEY',
+    next:'TO BUILD TALENT,',
+    last:'IMPACT TECH INDUSTRY'
   }
 
   const benifits = {
@@ -26,6 +26,38 @@ function Enterprises() {
         'Contribute to fill the gap between academia & industry.'
     ],
   }
+
+  const features = [
+      {
+        title:'HIRE',
+        text:'Talent'
+      },
+
+      {
+        title:'TRAIN',
+        text:'Students'
+      },
+
+      {
+        title:'POST',
+        text:'Jobs'
+      },
+
+      {
+        title:'TRAIN',
+        text:'Staff'
+      },
+
+      {
+        title:'BUILD',
+        text:'Tech Solutions'
+      },
+
+      {
+        title:'SPONSOR',
+        text:'Students'
+      },
+  ]
 
   const students = {
     title: 'WHY OUR STUDENTS',
@@ -53,19 +85,32 @@ function Enterprises() {
 
     return (
       <div className="Enterprises">
-          <div className="row g-0">
+          <div className="row g-0 Page-Row-Title ">
               <div className="col-12 col-md-4">
                   <PageTitle First={title.first} Highlight={title.highlight} Next={title.next} Last={title.last}></PageTitle>
               </div>
 
               <div className="col-12 col-md-8 Enroll-Contents">
-                  <div className="Why-Enroll mx-4 mb-4 mx-sm-5 mb-sm-5 mx-md-0 mb-md-0 pt-5 pb-4 ps-5 bg-white">
+                  <div className="Why-Enroll mx-4 mb-4 mx-sm-5 mb-sm-5 mx-md-0 mb-md-0 pt-4 pb-3 pt-sm-5 pb-sm-4 ps-4 ps-sm-5 bg-white">
                         <BulletList Title={benifits.title} List={benifits.benifitList} Visible={false}></BulletList>
                         <div className="d-none d-lg-block pe-4">
                             <img src={EnterprisesImage} alt="Enroll-Image"/>
                         </div>
                   </div>
               </div>  
+          </div>
+
+          <div className="Enterprises-Features px-2 px-sm-0">
+              <div className="row g-0 py-3 py-sm-4 py-md-5">
+                  {features.map((feature) => (
+                      <div className="col-6 col-sm-4 col-md-2 py-3 py-md-0 d-flex justify-content-center">
+                          <div className="Feature-Box col-10 col-sm-9 col-md-11 col-lg-10 col-xl-9 pt-4">
+                              <h6>{feature.title}</h6>
+                              <p>{feature.text}</p>
+                          </div>
+                      </div>
+                  ))}
+              </div>
           </div>
 
           <div className="Enterprises-Paragraph">
@@ -75,7 +120,7 @@ function Enterprises() {
           <div className="Enterprises-Details mb-3">
               <div className="row g-0">
                   <div className="col-md-4 col-lg-3 d-flex justify-content-center justify-content-md-end">
-                      <div className="col-11 col-sm-9 col-md-11 my-4 py-3 px-4 For-Student-E">
+                      <div className="col-11 col-sm-9 col-md-11 mt-3 my-md-4 py-3 px-4 For-Student-E">
                         <BulletList Title={students.title} List={students.benifitList}></BulletList>
                       </div>
                   </div>
@@ -90,9 +135,9 @@ function Enterprises() {
           </div>
 
             <ContactForm 
-                SubTitle='Speak with the Founder - Shaveen Fernando (+94) 0777428427 ' 
-                ContactTitle='Or drop an Email' 
-                Email='shaveen@saltglobal.org'>
+                SubTitle='Drop a message. You will be contacted by our functional consultants.' 
+                Sub='OR directly speak with the Founder - Shaveen Fernando (+94) 0777428427'
+                ContactTitle='OR feel free to talk to us and decide'>
             </ContactForm>
       </div>
     );

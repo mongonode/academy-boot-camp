@@ -57,6 +57,12 @@
     color: rgb(0, 0, 192);
 }
 
+.Sub-Title span {
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(109, 109, 109);
+}
+
 .ContactForm form textarea {
     font-size: 14px;
     padding-top: 4px;
@@ -105,4 +111,22 @@ form textarea::placeholder {
 
 .Call p {
     font-size: 14px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+    .Contact-Title h4 {
+        font-size: 20px;
+    }
+
+    .Contact-Title p {
+        font-size: 13px;
+    }
+
+    .Sub-Title span {
+        font-size: 12px;
+    }
+
+    .Talk-With-Us p {
+        font-size: 13px;
+    }
 }

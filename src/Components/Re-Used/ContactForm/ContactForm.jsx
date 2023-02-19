@@ -4,6 +4,7 @@ import CallIcon from "../../../Assets/Home-Page/Call.png"
 import WhatsappIcon from "../../../Assets/Home-Page/Whatsapp.png"
 import InputField from "../InputField/InputField"
 import SubmitButton from "../SubmitButton/SubmitButton"
+import AdminData from "../../Static-Database/AdminData/AdminData"
 
 const ContactForm =( props )=> {
 
@@ -54,7 +55,7 @@ const ContactForm =( props )=> {
                             <div className="col-12 col-md-6 px-3">
                                 <div className="Contact-Title mt-4">
                                     <h4>DIFFICULT TO <span>DESIDE</span>..?</h4>
-                                    <p className="pt-2">{props.SubTitle}</p>
+                                    <p className="pt-2 Sub-Title">{props.SubTitle}<br></br><span>{props.Sub}</span></p>
                                 </div>
 
                                 <div className="Contact-Image py-3 d-none d-md-flex">
@@ -62,19 +63,19 @@ const ContactForm =( props )=> {
                                 </div>
 
                                 <div className="Talk-With-Us d-none d-md-block">
-                                    <p>{props.ContactTitle} <span>{props.Email}</span></p>
+                                    <p>{props.ContactTitle}</p>
 
                                     <div className="Contact-Call">
                                         <div className="Call">
                                             <img src={ CallIcon } alt="" />
-                                            <p>0742833337</p>
+                                            <p>{AdminData.call}</p>
                                         </div>
 
                                         <p className="px-sm-3">|</p>
 
                                         <div className="Call">
                                             <img src={ WhatsappIcon } alt="" />
-                                            <p>0742833337</p>
+                                            <p>{AdminData.whatsapp}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -106,19 +107,19 @@ const ContactForm =( props )=> {
                                 </form>
 
                                 <div className="Talk-With-Us d-block d-md-none">
-                                    <p>{props.ContactTitle} <span>{props.Email}</span></p>
+                                    <p>{props.ContactTitle}</p>
                                 
                                     <div className="Contact-Call">
                                         <div className="Call">
                                             <img src={ CallIcon } alt="" />
-                                            <p>0742833337</p>
+                                            <p>{AdminData.call}</p>
                                         </div>
 
                                         <p className="px-2">|</p>
 
                                         <div className="Call">
                                             <img src={ WhatsappIcon } alt="" />
-                                            <p>0742833337</p>
+                                            <p>{AdminData.whatsapp}</p>
                                         </div>
                                     </div>
                                 </div>

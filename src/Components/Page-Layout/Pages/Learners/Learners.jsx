@@ -81,14 +81,14 @@ function Learners() {
           </div>
 
           <div className="Navigations px-5 py-3">
-            <div className="col-8">
+            <div className="col-12 col-sm-12 col-md-9 col-lg-8">
                 <div className="row g-0">
                     <div className="col-6 pe-1">
-                        <DarkButton Title='CLICK HERE TO FIND WORKS'></DarkButton>
+                        <DarkButton Title='CLICK HERE TO' Role='FIND WORKS'></DarkButton>
                     </div>
 
                     <div className="col-6 ps-1">
-                        <LightButton Title='CLICK HERE TO LEARN FREE'></LightButton>
+                        <LightButton Title='CLICK HERE TO' Role='LEARN FREE'></LightButton>
                     </div>
                 </div>
             </div>   

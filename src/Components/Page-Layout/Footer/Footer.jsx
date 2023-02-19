@@ -2,6 +2,7 @@ import "./Footer.css";
 import Logo from "../../../Assets/Header/Logo.png";
 import CallIcon from "../../../Assets/Home-Page/Call.png";
 import WhatsappIcon from "../../../Assets/Home-Page/Whatsapp.png";
+import AdminData from "../../Static-Database/AdminData/AdminData";
 
 function Footer() {
     return (
@@ -27,12 +28,12 @@ function Footer() {
 
                           <div className="Footer-Contact">
                               <img src={CallIcon} alt="Phone number" />
-                              <p>(+94) 074 283 3337</p>
+                              <p>(+94) {AdminData.call}</p>
                           </div>
 
                           <div className="Footer-Contact">
                               <img src={WhatsappIcon} alt="Whatsapp number" />
-                              <p>(+94) 074 283 3337</p>
+                              <p>(+94) {AdminData.whatsapp}</p>
                           </div>
                       </div>
                   </div>
