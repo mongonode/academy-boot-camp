@@ -35,4 +35,12 @@
     .Side-Scroller::-webkit-scrollbar{
         height: 5px;
     }
+
+    .HoriontalScroller h6{
+        font-size: 18px;
+    }
+
+    .List-Item-Line li {
+        font-size: 13px;
+    }
 }

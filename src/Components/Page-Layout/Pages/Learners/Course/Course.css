@@ -1,3 +1,7 @@
+.Back-to-Courses {
+    position: fixed;
+}
+
 .Course-Information {
     height: 100%;
     display: flex;
@@ -160,5 +164,17 @@
 
     .Bank-Details h6 {
         font-size: 14px;
+    }
+
+    .Payment-Instructions h5 {
+        font-size: 14px;
+    }
+
+    .Advice-Title h6 {
+        font-size: 13px;
+    }
+
+    .Advice-Details p {
+        font-size: 12px;
     }
 }

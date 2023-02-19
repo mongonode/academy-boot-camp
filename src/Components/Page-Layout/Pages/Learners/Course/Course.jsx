@@ -8,6 +8,7 @@ import RadioInput from "../../../../Re-Used/RadioInput/RadioInput";
 import SubmitButton from "../../../../Re-Used/SubmitButton/SubmitButton";
 import HoriontalScroller from "../../../../Re-Used/HoriontalScroller/HoriontalScroller";
 import AdminData from "../../../../Static-Database/AdminData/AdminData";
+import BackButton from "../../../../Re-Used/BackButton/BackButton";
 
 function Course() {
 
@@ -84,8 +85,13 @@ function Course() {
 
     return (
         <div className="Course bg-white">
+
+            <div className="Back-to-Courses">
+                <BackButton Title='Back to the courses'></BackButton>
+            </div>
+
             <div className="bg-light pt-4 pt-md-5">
-                <div className="Course-Title px-3 px-sm-4 px-lg-5">
+                <div className="Course-Title px-3 px-sm-4 px-lg-5 pt-4 pt-md-3">
                     <h2>{dataSet.title} - <span>{dataSet.level}</span></h2>
                 </div>
 

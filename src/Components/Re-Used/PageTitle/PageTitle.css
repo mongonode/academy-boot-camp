@@ -14,8 +14,10 @@
 .align-Title-Box h2 {
     color: #ffff;
     text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
 }
 
 .align-Title-Box span {
-    color: rgb(161, 225, 255);
+    color: rgb(141, 219, 255);
 }
