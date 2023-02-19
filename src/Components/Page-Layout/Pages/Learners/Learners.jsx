@@ -80,7 +80,7 @@ function Learners() {
                 </div>
           </div>
 
-          <div className="Navigations px-5 py-3">
+          <div className="Navigations px-3 px-sm-5 py-2 py-sm-3">
             <div className="col-12 col-sm-12 col-md-9 col-lg-8">
                 <div className="row g-0">
                     <div className="col-6 pe-1">

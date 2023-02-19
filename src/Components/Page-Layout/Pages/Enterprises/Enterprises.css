@@ -5,6 +5,15 @@
     border-color: rgb(211, 211, 211);
 }
 
+.Enterprises-Features {
+    background-image: url('../../../../Assets//Home-Page/Benifits-Background.jpg');
+    background-size: cover;
+}
+
+.Enterprises-Paragraph {
+    box-shadow: 0px 0px 3px 2px #00000063;
+}
+
 .Enterprises-Paragraph p {
     background-color: rgb(241, 241, 241);
     font-size: 16px;
@@ -12,7 +21,7 @@
 }
 
 .For-Partners {
-    background-color: rgb(0,85,187);
+    background-color: rgba(0, 93, 207, 0.952);
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
@@ -54,9 +63,14 @@
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {
     .Enterprises-Paragraph p {
-        background-color:rgb(13,106,199);
-        color: rgb(230, 230, 230);
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 500;
+    }
+
+    .For-Student-E {
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 6px;
+        border-color: rgb(0,85,187);
     }
 }

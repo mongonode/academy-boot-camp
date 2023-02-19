@@ -87,7 +87,7 @@
         font-size: 12px;
     }
 
-    .Grid-Contents::-webkit-scrollbar{
+    .Grid-Scroll::-webkit-scrollbar{
         height: 5px;
     }
 }
