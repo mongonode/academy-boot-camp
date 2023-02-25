@@ -7,6 +7,8 @@ const BulletList =( props )=> {
             <div className="Bullet-Box bg-white">
                 <h5>{props.Title}</h5>
 
+                {props.Sub_Active && ( <p>{props.SubTitle}</p> )}
+
                 <ul className="Bullet-List">
                     { (props.List).map( (bullet) => (
                         <li>{ bullet }</li>

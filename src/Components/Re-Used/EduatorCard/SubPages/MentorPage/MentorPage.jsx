@@ -1,0 +1,51 @@
+import BulletList from "../../../BulletList/BulletList"
+import ContactForm from "../../../ContactForm/ContactForm"
+import ImportantBar from "../../../ImportantBar/ImportantBar"
+import PageSubtitle from "../../../PageSubtitle/PageSubtitle"
+import "./MentorPage.css"
+
+const MentorPage =()=> {
+
+    const subtitle = {
+        first: 'WE BELIEVE IN',
+        highlight: 'MENTORING',
+        last: 'TO BUILD A STRONGER CAREER IN TECH.'
+    }
+
+    const techMentors = [
+        'Mentors are industry professionals who guide you to your goals.',
+        'Mentors know what industry demands.',
+        'Mentors provide feedback and guidance grow your tech career.',
+        'Mentor should have minimum of three years’ experience working in the chosen field.',
+        'Good communication skills.'
+    ]
+
+    return (
+        <div className="MentorPage">
+            <PageSubtitle First={subtitle.first} Highlighted={subtitle.highlight} Last={subtitle.last}></PageSubtitle>
+
+            <div className="Mentor-Introduction pb-4">
+                <div className="row">
+                    <div className="col-6 px-5">
+                        <p>Our mentorship program: We are redefining education for the 21st century through online learning combined with high-touch, human support throughout the student lifecycle: dedicated student advisors, career coaches, and industry-expert mentors.</p>
+                        <h6>If you have the desire and the skills to help the next generation, <span>WE NEED YOU</span>.!</h6>
+                    </div>
+
+                    <div className="col-6 px-5">
+                        <BulletList Title='Who are the +Tech Mentors?' List={techMentors}></BulletList>
+                    </div>
+                </div>
+            </div>
+
+            <ImportantBar
+                Title='JOIN THE MOVEMENT..!!!'
+                SubTitle='We’re on a mission to bridge the world’s skills gap, offering transformative online education for an affordable dynamic track.'
+                Role='TechMENTOR'>
+            </ImportantBar>
+
+            <ContactForm></ContactForm>
+        </div>
+    )
+}
+
+export default MentorPage

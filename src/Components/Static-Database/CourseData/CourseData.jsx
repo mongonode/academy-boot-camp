@@ -1,6 +1,90 @@
 const CourseData = [
+
     {
         category_ID: 1,
+        category_Name: 'KIDS',
+        courses : [
+            {   
+                id: 1,
+                title:'CODING BASICS WITH SCRATCH',
+                level:'FOR KIDS',
+                introduction:'',
+                description:'',
+                join:'',
+                duration:'',
+                method:'Online (Live)',
+                language:'Sinhala/English',
+                attendance:'4 hours/week (2 days / week)',
+                fee:5000,
+                contents:[
+                    {
+                        contentTitle:'',
+                        lessons:[
+                            '',
+                            '',
+                            '',
+                            '',
+                        ]
+                    }
+                ],
+            },
+
+            {   
+                id: 2,
+                title:'WEB DEVELOPMENT',
+                level:'FOR KIDS',
+                introduction:'',
+                description:'',
+                join:'',
+                duration:'',
+                method:'Online (Live)',
+                language:'Sinhala/English',
+                attendance:'4 hours/week (2 days / week)',
+                fee:5000,
+                contents:[
+                    {
+                        contentTitle:'',
+                        lessons:[
+                            '',
+                            '',
+                            '',
+                            '',
+                        ]
+                    }
+                ],
+            },
+
+            {   
+                id: 3,
+                title:'COMPUTER BASICS',
+                level:'FOR KIDS',
+                introduction:'',
+                description:'',
+                join:'',
+                duration:'',
+                method:'Online (Live)',
+                language:'Sinhala/English',
+                attendance:'4 hours/week (2 days / week)',
+                fee:5000,
+                contents:[
+                    {
+                        contentTitle:'',
+                        lessons:[
+                            '',
+                            '',
+                            '',
+                            '',
+                        ]
+                    }
+                ],
+            },
+        ]
+    },
+
+//------------------------------------------------------------------------------------------------------------------------------------------
+
+    {
+        category_ID: 2,
         category_Name: 'CODING',
         courses : [
             {   
@@ -186,6 +270,25 @@ const CourseData = [
                 title:'WEB DEVELOPMENT',
                 level:'INTERMEDIATE',
                 introduction:'Build powerful commercial web sites, with frameworks',
+                description:'',
+                join:'',
+                duration:'',
+                method:'',
+                language:'',
+                attendance:'',
+                fee:5000,
+                contents:[
+                    {
+                        contentTitle:'',
+                        lessons:[
+                            '',
+                            '',
+                            '',
+                            '',
+                        ]
+                    },
+    
+                ],
             },
 
             {
@@ -193,6 +296,25 @@ const CourseData = [
                 title:'WEB DEVELOPMENT',
                 level:'FULL STACK',
                 introduction:'Learn all the skills, tools, & processes you need to become a web developer',
+                description:'',
+                join:'',
+                duration:'',
+                method:'',
+                language:'',
+                attendance:'',
+                fee:5000,
+                contents:[
+                    {
+                        contentTitle:'',
+                        lessons:[
+                            '',
+                            '',
+                            '',
+                            '',
+                        ]
+                    },
+    
+                ],
             },
 
             {
@@ -200,6 +322,25 @@ const CourseData = [
                 title:'SOFTWARE ENGINEERING',
                 level:'FOUNDATION',
                 introduction:'Best for developers to sharpen their engineering mindset',
+                description:'',
+                join:'',
+                duration:'',
+                method:'',
+                language:'',
+                attendance:'',
+                fee:5000,
+                contents:[
+                    {
+                        contentTitle:'',
+                        lessons:[
+                            '',
+                            '',
+                            '',
+                            '',
+                        ]
+                    },
+    
+                ],
             },
         ]
     },
@@ -207,28 +348,33 @@ const CourseData = [
 //------------------------------------------------------------------------------------------------------------------------------------------
    
     {
-        category_ID: 2,
+        category_ID: 3,
         category_Name: 'DATA',
         courses : [
-            // {
-            //     title:'WEB DEVELOPMENT',
-            //     level:'FOUNDATION',
-            //     introduction:'Build foundational web development skills with HTML, CSS, JAVASCRIPT.',
-            // }
-        ]
-    },
-
-//------------------------------------------------------------------------------------------------------------------------------------------
-
-    {
-        category_ID: 3,
-        category_Name: 'DESIGNING',
-        courses : [
-            // {
-            //     title:'WEB DEVELOPMENT',
-            //     level:'FOUNDATION',
-            //     introduction:'Build foundational web development skills with HTML, CSS, JAVASCRIPT.',
-            // }
+            {   
+                id: 1,
+                title:'DATA SCIENCE',
+                level:'FOR BEGINNERS',
+                introduction:'',
+                description:'',
+                join:'',
+                duration:'',
+                method:'Online (Live)',
+                language:'Sinhala/English',
+                attendance:'4 hours/week (2 days / week)',
+                fee:5000,
+                contents:[
+                    {
+                        contentTitle:'',
+                        lessons:[
+                            '',
+                            '',
+                            '',
+                            '',
+                        ]
+                    }
+                ],
+            }
         ]
     },
 
@@ -236,16 +382,66 @@ const CourseData = [
 
     {
         category_ID: 4,
-        category_Name: 'ENTREPRENEURSHIP',
+        category_Name: 'DESIGN',
         courses : [
-            // {
-            //     title:'WEB DEVELOPMENT',
-            //     level:'FOUNDATION',
-            //     introduction:'Build foundational web development skills with HTML, CSS, JAVASCRIPT.',
-            // }
+            {   
+                id: 1,
+                title:'GRAPHICS',
+                level:'FOR DEVELOPERS',
+                introduction:'',
+                description:'',
+                join:'',
+                duration:'',
+                method:'Online (Live)',
+                language:'Sinhala/English',
+                attendance:'4 hours/week (2 days / week)',
+                fee:5000,
+                contents:[
+                    {
+                        contentTitle:'',
+                        lessons:[
+                            '',
+                            '',
+                            '',
+                            '',
+                        ]
+                    }
+                ],
+            }
         ]
     },
 
+//------------------------------------------------------------------------------------------------------------------------------------------
+    {
+        category_ID: 5,
+        category_Name: 'ENTREPRENEURSHIP',
+        courses : [
+            {   
+                id: 1,
+                title:'LAUNCH TRACK',
+                level:'BUSINESS MODEL CREATION',
+                introduction:'',
+                description:'',
+                join:'',
+                duration:'',
+                method:'Online (Live)',
+                language:'Sinhala/English',
+                attendance:'4 hours/week (2 days / week)',
+                fee:5000,
+                contents:[
+                    {
+                        contentTitle:'',
+                        lessons:[
+                            '',
+                            '',
+                            '',
+                            '',
+                        ]
+                    }
+                ],
+            }
+        ]
+    },
 ];
 
 export default CourseData

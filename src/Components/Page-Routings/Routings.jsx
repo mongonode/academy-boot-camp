@@ -8,6 +8,9 @@ import Educators from "../Page-Layout/Pages/Educators/Educators"
 import Enterprises from "../Page-Layout/Pages/Enterprises/Enterprises";
 import AboutUs from "../Page-Layout/Pages/AboutUs/AboutUs";
 import Course from "../Page-Layout/Pages/Learners/Course/Course";
+import TeachPage from "../Re-Used/EduatorCard/SubPages/TeachPage/TeachPage";
+import MentorPage from "../Re-Used/EduatorCard/SubPages/MentorPage/MentorPage";
+import PartnerPage from "../Re-Used/EduatorCard/SubPages/PartnerPage/PartnerPage";
 
 function Routings() {
     return (
@@ -25,6 +28,9 @@ function Routings() {
             <Route path='/educators' element={<Educators/>}></Route>
             <Route path='/enterprises' element={<Enterprises/>}></Route>
             <Route path='/about' element={<AboutUs/>}></Route>
+            <Route path='/teach' element={<TeachPage/>}></Route>
+            <Route path='/mentor' element={<MentorPage/>}></Route>
+            <Route path='/partner' element={<PartnerPage/>}></Route>
           </Routes>
         </Router>
       </div>

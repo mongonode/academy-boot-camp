@@ -27,6 +27,14 @@
     width: 160px;
 }
 
+.Bullet-Box p {
+    font-size: 14px;
+    height: 8px;
+    margin-top: -7px;
+    font-weight: 400;
+    color: rgb(134, 134, 134);
+}
+
 @media only screen and (min-width: 0px) and (max-width: 576px) {
     .Bullet-Box h5{
         font-size: 14px;
