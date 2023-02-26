@@ -1,8 +1,14 @@
-.Mentor-Introduction p {
+.Mentor-Introduction p, h6{
     font-size: 15px;
     text-align: justify;
 }
 
 .Mentor-Introduction span {
     color: rgb(0, 68, 196);
+}
+
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+    .Mentor-Introduction p, h6{
+        font-size: 14px;
+    }
 }

@@ -1,14 +1,21 @@
+import "./Learners.css"
+import { useState } from "react";
+import LearnerLinks from "../../../Static-Database/LearnerLinks/LearnerLinks";
+
 import PageTitle from "../../../Re-Used/PageTitle/PageTitle";
 import BulletList from "../../../Re-Used/BulletList/BulletList";
-import "./Learners.css"
 import VerticalGrid from "../../../Re-Used/VerticalGrid/VerticalGrid";
 import ContactForm from "../../../Re-Used/ContactForm/ContactForm";
 import Enroll from "../../../../Assets/Learners-Page/Enroll.png"
 import Guidence from "../../../../Assets/Learners-Page/Guidence.png"
 import DarkButton from "../../../Re-Used/DarkButton/DarkButton";
 import LightButton from "../../../Re-Used/LightButton/LightButton";
+import LinkPopup from "../../../Re-Used/LinkPopup/LinkPopup";
 
 function Learners() {
+
+    const[linkPupup, setLinkPopup] = useState(false)
+    const[selected, setSelected] = useState(null)
 
     const title = {
         first: 'MEANINGFUL ALTERNATIVE TO',
@@ -36,6 +43,11 @@ function Learners() {
         'LinkedIn profile',
         'Attend online career discussions to meet other students, interact with mentors, resolve burning career issues, and broaden your understanding of the field.'
     ]
+
+    const handle_Popup =( select )=> {
+        setSelected(select)
+        setLinkPopup(true)
+    }
 
     return (
       <div className="Learners">
@@ -84,20 +96,35 @@ function Learners() {
             <div className="col-12 col-sm-12 col-md-9 col-lg-8">
                 <div className="row g-0">
                     <div className="col-6 pe-1">
-                        <DarkButton Title='CLICK HERE TO' Role='FIND WORKS'></DarkButton>
+                        <DarkButton 
+                            Title='CLICK HERE TO' 
+                            Role='FIND WORKS'
+                            press_Action={()=> handle_Popup(0)}>
+                        </DarkButton>
                     </div>
 
                     <div className="col-6 ps-1">
-                        <LightButton Title='CLICK HERE TO' Role='LEARN FREE'></LightButton>
+                        <LightButton 
+                            Title='CLICK HERE TO' 
+                            Role='LEARN FREE'
+                            press_Action={()=> handle_Popup(1)}>
+                        </LightButton>
                     </div>
                 </div>
             </div>   
           </div>
-
+            
             <ContactForm 
                 SubTitle='Drop a message. You will be contacted by our mentors.' 
                 ContactTitle='OR feel free to talk to us and decide.'>
             </ContactForm>
+
+            {linkPupup && (
+                <LinkPopup 
+                    Data={LearnerLinks[selected]} 
+                    press_Action={()=> setLinkPopup(false)}>
+                </LinkPopup>
+            )}
       </div>
     );
 }

@@ -15,18 +15,18 @@
 
 .ImportantBar h6 {
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(92, 92, 92);
 }
 
 .Get-Contact p {
-    height: 9px;
+    margin-top: -13px;
     font-size: 15px;
     color: rgb(0, 0, 0);
 }
 
 .Get-Contact span {
     font-weight: 500;
-    color: rgb(82, 82, 82);
+    color: rgb(0, 0, 0);
 }
 
 .Get-Contact .Important-Email {

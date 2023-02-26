@@ -29,10 +29,10 @@
 
 .Bullet-Box p {
     font-size: 14px;
-    height: 8px;
     margin-top: -7px;
     font-weight: 400;
     color: rgb(134, 134, 134);
+    margin-bottom: 3px;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 576px) {
@@ -41,6 +41,10 @@
     }
 
     .Bullet-Box li {
+        font-size: 12px;
+    }
+
+    .Bullet-Box p {
         font-size: 12px;
     }
 }

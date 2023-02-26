@@ -20,7 +20,7 @@
     width: 100%;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
-    background-color: rgb(7,96,194);
+    background: linear-gradient(to right,  rgb(60, 151, 255), rgba(0, 102, 226, 0.932),   rgb(60, 151, 255));
     border-top-style: solid;
     border-width: 1px;
     border-color: rgb(219, 219, 219);
@@ -55,12 +55,12 @@
     }
 
     .EducatorCard h5 {
-        font-size: 17px;
-        color: black;
+        font-size: 16px;
+        color: rgb(0, 0, 0);
     }
 
     .Educator-Role {
-        background-color: rgba(255, 255, 255, 0);
+        background: linear-gradient(to right,  rgba(255, 255, 255, 0), rgba(255, 255, 255, 0),   rgba(255, 255, 255, 0));
         border-color: rgba(255, 255, 255, 0);
         padding-top: 0px;
     }
@@ -81,7 +81,7 @@
     }
     
     .Educator-Role {
-        background-color: rgba(255, 255, 255, 0);
+        background: linear-gradient(to right,  rgba(255, 255, 255, 0), rgba(255, 255, 255, 0),   rgba(255, 255, 255, 0));
         border-color: rgba(255, 255, 255, 0);
         padding-top: 0px;
     }

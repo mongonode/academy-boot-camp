@@ -3,3 +3,12 @@
     border-width: 1px;
     border-color: rgb(199, 199, 199);
 }
+
+.Choose-Education-Role h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+.Choose-Education-Role span {
+    color: rgb(1,86,188);
+}

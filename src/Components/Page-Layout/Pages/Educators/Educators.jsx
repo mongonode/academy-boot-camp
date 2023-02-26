@@ -47,11 +47,11 @@ function Educators() {
     return (
         <div className="Educators">
             <div className="row g-0 Title-Educators">
-                <div className="col-4">
+                <div className="col-12 col-md-5 col-lg-4">
                     <PageTitle First={title.first} Highlight={title.highlight} Next={title.next} Last={title.last}></PageTitle>
                 </div>
 
-                <div className="col-8">
+                <div className="col-12 col-md-7 col-lg-8">
 
                 </div>
             </div>
@@ -60,10 +60,14 @@ function Educators() {
                 <h6></h6>
             </div>
 
-            <div className="Process-Row py-md-4 py-lg-5 px-lg-4 px-md-3">
-                <div className="row g-0">
+            <div className="Choose-Education-Role pt-4 px-4 px-sm-5">
+                <h2>SIR, CAN WE ADD A <span>TITLE</span> HERE..?</h2>
+            </div>
+
+            <div className="Process-Row py-md-4 px-lg-4 px-md-3 mb-3">
+                <div className="row g-0 py-3 py-sm-4 py-md-0">
                     {likes.map((like) => (
-                        <div className="col-12 px-4 py-3 py-md-0 col-md-4 px-md-2 px-lg-3">
+                        <div className="col-12 px-4 px-sm-5 py-2 py-md-0 col-md-4 px-md-2 px-lg-3">
                             <EducatorCard
                                 Title={like.title}
                                 Image={like.image}

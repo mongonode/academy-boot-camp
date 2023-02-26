@@ -34,7 +34,7 @@ const PartnerPage =()=> {
                     <BulletList Title='Our programs, teaches your students/beneficieries various life skills such as:' List={partnerSkills}></BulletList>
                 </div>
 
-                <div className="col-12 col-md-5 pe-md-5">
+                <div className="col-12 col-md-5 pe-md-5 pt-3 pt-md-0">
                     <div className="Partner-Offers pt-4 pb-2 px-3">
                         <DarkList Title='The services +Tech Academy offers' List={services}></DarkList>
                     </div>
