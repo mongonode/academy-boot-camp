@@ -80,11 +80,11 @@
 
 @media only screen and (min-width: 0px) and (max-width: 576px) {
     .Single-Tab {
-        font-size: 11px;
+        font-size: 12px;
     }
 
     .Active-Tab { 
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .Grid-Scroll::-webkit-scrollbar{

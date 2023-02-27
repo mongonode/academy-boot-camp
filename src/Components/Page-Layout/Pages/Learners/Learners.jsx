@@ -57,7 +57,7 @@ function Learners() {
               </div>
 
               <div className="col-12 col-md-8 Enroll-Contents">
-                  <div className="Why-Enroll mx-4 mb-4 mx-sm-5 mb-sm-5 mx-md-0 mb-md-0 pt-4 pb-3 pt-sm-5 pb-sm-4 ps-4 pe-4 ps-sm-5 pe-sm-4 bg-white">
+                  <div className="Why-Enroll mx-3 mb-4 mx-sm-5 mb-sm-5 mx-md-0 mb-md-0 pt-4 pb-3 pt-sm-5 pb-sm-4 ps-3 pe-4 ps-sm-5 pe-sm-4 bg-white">
                         <BulletList Title={benifits.title} List={benifits.benifitList} Visible={false}></BulletList>
                         <div className="d-none d-lg-block">
                             <img src={Enroll} alt="Enroll-Image"/>

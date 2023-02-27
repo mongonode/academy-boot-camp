@@ -47,12 +47,12 @@ function Educators() {
     return (
         <div className="Educators">
             <div className="row g-0 Title-Educators">
-                <div className="col-12 col-md-5 col-lg-4">
+                <div className="col-12 col-md-5 col-lg-5">
                     <PageTitle First={title.first} Highlight={title.highlight} Next={title.next} Last={title.last}></PageTitle>
                 </div>
 
-                <div className="col-12 col-md-7 col-lg-8">
-
+                <div className="col-12 col-md-7 col-lg-7 px-3 px-sm-4 Educator-Intro">
+                    <p className="">Education doesn’t have to be about tests, certificates and homework. It could be about learning instead. We are in journey to make education a fun, encouraging and motivating life activity.  We invest our resources and industry relationships in developing the  next generation professional development in the tech space to build the right minded talent to the needs of the  global tech industry. We like to partner with everyone who has the vision to build the younger generation with skills and right attitude. <br></br><span className=""><strong>Stay connected with our educator community!</strong></span></p>
                 </div>
             </div>
 
