@@ -6,6 +6,7 @@ import { useEffect } from "react"
 import "./TeachPage.css"
 import BackButton from "../../../BackButton/BackButton"
 
+
 const TeachPage =()=> {
 
     const subtitle = {

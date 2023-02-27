@@ -1,14 +1,20 @@
 import "./BackButton.css"
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import { motion } from 'framer-motion';
 
 const BackButton =( props )=> {
 
+  const [animation, setAnimation] = useState(false)
+
     useEffect(() => {
+      setAnimation(true)
         window.addEventListener("popstate", restoreScrollPosition);
     
         return () => {
           window.removeEventListener("popstate", restoreScrollPosition);
         };
+
+        
       }, []);
     
       const handleBackClick = () => {
@@ -24,12 +30,18 @@ const BackButton =( props )=> {
       };
 
     return (
-        <div className="BackButton">
-            <button onClick={handleBackClick}>
-                <i class="bi bi-arrow-left-short"></i>
-                <p>{props.Title}</p>
-            </button>
-        </div>
+      <div>
+        {animation && (
+        <motion.div className="BackButton"
+            initial={{ x: -100 }}
+            animate={{ x: 0 , transition: { duration: 0.5 }}}>
+              <button onClick={handleBackClick}>
+                  <i class="bi bi-arrow-left-short"></i>
+                  <p>{props.Title}</p>
+              </button>
+        </motion.div>
+        )}
+      </div>
     )
 }
 
