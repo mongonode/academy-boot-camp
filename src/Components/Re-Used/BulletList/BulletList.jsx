@@ -5,13 +5,13 @@ const BulletList =( props )=> {
     return (
         <div BulletList="ContactForm">
             <div className="Bullet-Box bg-white">
-                <h5>{props.Title}</h5>
+                <h5 className="ms-1 ms-sm-0">{props.Title}</h5>
 
-                {props.Sub_Active && ( <p>{props.SubTitle}</p> )}
+                {props.Sub_Active && ( <p className="ms-1 ms-sm-0">{props.SubTitle}</p> )}
 
                 <ul className="Bullet-List">
                     { (props.List).map( (bullet) => (
-                        <li>{ bullet }</li>
+                        <li className="me-1">{ bullet }</li>
                     ))}
                 </ul>
 

@@ -20,5 +20,11 @@
 
 .Educator-Intro p {
     text-align: justify;
-    font-size: 13px;
+    font-size: 15px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+    .Educator-Intro p {
+        font-size: 14px;
+    }
 }

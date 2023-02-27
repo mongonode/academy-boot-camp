@@ -47,6 +47,10 @@
     list-style: none;
 }
 
+.Expand-Menu-to-Desktops li {
+    color: rgb(255, 255, 255);
+}
+
 .Expand-Menu-to-Desktops a {
     text-decoration: none;
     font-size: 14px;
@@ -85,7 +89,8 @@
 }
 
 .Toggler-Menu-to-Mobiles li {
-    margin-top: 8px;
+    margin-top: 9px;
+    color: rgb(255, 255, 255);
 }
 
 .Toggler-Menu-to-Mobiles li:hover {

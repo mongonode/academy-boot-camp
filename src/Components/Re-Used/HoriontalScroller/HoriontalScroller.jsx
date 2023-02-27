@@ -2,7 +2,7 @@ import "./HoriontalScroller.css"
 
 const HoriontalScroller =( props )=> {
 
-    const chunkSize = 10;
+    const chunkSize = props.Chunk;
     const chunks = [];
 
     for ( let i = 0; i < props.List.length; i += chunkSize ) {
@@ -18,7 +18,15 @@ const HoriontalScroller =( props )=> {
                     <div className="col-12 col-md-6 col-lg-4">
                         <ul className="List-Item-Line">
                             {_chunk.map((_line)=> (
-                                <li>{_line}</li>
+                                <div>
+                                    { props.Style == 1 && (
+                                        <li>{_line}</li>
+                                    )}
+
+                                    { props.Style == 2 && (
+                                        <p><strong>{_line.point}</strong><br></br><span><p className="me-3">{_line.explain}</p></span></p>
+                                    )}
+                                </div>
                             ))}
                         </ul>
                     </div>

@@ -51,8 +51,8 @@ function Educators() {
                     <PageTitle First={title.first} Highlight={title.highlight} Next={title.next} Last={title.last}></PageTitle>
                 </div>
 
-                <div className="col-12 col-md-7 col-lg-7 px-3 px-sm-4 Educator-Intro">
-                    <p className="">Education doesn’t have to be about tests, certificates and homework. It could be about learning instead. We are in journey to make education a fun, encouraging and motivating life activity.  We invest our resources and industry relationships in developing the  next generation professional development in the tech space to build the right minded talent to the needs of the  global tech industry. We like to partner with everyone who has the vision to build the younger generation with skills and right attitude. <br></br><span className=""><strong>Stay connected with our educator community!</strong></span></p>
+                <div className="col-12 col-md-7 col-lg-7 px-3 px-sm-4 Educator-Intro pt-3 pt-md-0">
+                    <p className="">Education doesn’t have to be about tests, certificates and homework. It could be about learning instead. We are in journey to make education a fun, encouraging and motivating life activity.  We invest our resources and industry relationships in developing the  next generation professional development in the tech space to build the right minded talent to the needs of the  global tech industry. We like to partner with everyone who has the vision to build the younger generation with skills and right attitude. <br></br><br></br><span className=""><strong>Stay connected with our educator community!</strong></span></p>
                 </div>
             </div>
 
@@ -61,7 +61,7 @@ function Educators() {
             </div>
 
             <div className="Choose-Education-Role pt-4 px-4 px-sm-5">
-                <h2>SIR, CAN WE ADD A <span>TITLE</span> HERE..?</h2>
+                <h2>EDUCATION IS A <span>GIFT</span> THAT NONE CAN TAKE AWAY</h2>
             </div>
 
             <div className="Process-Row py-md-4 px-lg-4 px-md-3 mb-3">

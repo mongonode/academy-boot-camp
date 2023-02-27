@@ -76,6 +76,10 @@
     background-color: rgb(231, 231, 231);
 }
 
+.Faq-List h6 {
+    color: rgb(0, 0, 0);
+}
+
 .Asking-Faqs p {
     margin-top: -6px;
     font-size: 15px;
@@ -127,11 +131,12 @@
 
     .Faq-List h6 {
         font-size: 14px;
+        color: rgb(0, 0, 0);
     }
 
     .Faq-List p {
         font-size: 14px;
-        color: rgb(107, 107, 107);
+        color: rgb(73, 73, 73);
     }
 
 

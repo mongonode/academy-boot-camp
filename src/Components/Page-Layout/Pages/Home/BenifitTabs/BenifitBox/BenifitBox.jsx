@@ -22,7 +22,7 @@ function BenifitBox() {
               </div>
 
               <div className="col-12">
-                  <div className="Benifit-Tabs px-4 py-4">
+                  <div className="Benifit-Tabs px-3 px-sm-4 py-4">
                       <Outlet></Outlet>
                   </div>
               </div>

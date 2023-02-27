@@ -172,13 +172,13 @@ function AboutUs() {
                 <div className="Val-and-Object py-4">
                     <div className="row g-0 px-3 px-sm-0">
                         <div className="col-sm-6 ps-sm-4 ps-md-5 pe-sm-2 pb-3 pb-sm-0">
-                            <div className="Objectives-About pt-4 pb-4 px-3 px-sm-4">
+                            <div className="Objectives-About pt-4 pb-4 px-2 px-sm-4">
                                 <DarkList Title='Our Objectives' List={objectives}></DarkList>
                             </div>
                         </div>
 
                         <div className="col-sm-6 pe-sm-4 pe-md-5 ps-sm-2">
-                            <div className="Values-About pt-3 pt-sm-2 px-3 px-sm-4">
+                            <div className="Values-About pt-3 pt-sm-2 px-2 px-sm-4">
                                 <BulletList Title='Our Values' List={values} Sub_Active={true} SubTitle='We are growing around these core values:'></BulletList>
                             </div>
                         </div>

@@ -31,6 +31,10 @@
     font-size: 15px;
 }
 
+.List-Item-Line p {
+    font-size: 15px;
+}
+
 @media only screen and (min-width: 0px) and (max-width: 576px) {
     .Side-Scroller::-webkit-scrollbar{
         height: 5px;
@@ -41,6 +45,11 @@
     }
 
     .List-Item-Line li {
-        font-size: 13px;
+        font-size: 14px;
     }
+
+    .List-Item-Line p {
+        font-size: 14px;
+    }
+    
 }

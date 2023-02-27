@@ -16,6 +16,7 @@
 
 .Wanted-Box-Popup {
     width:100%;
+    overflow: auto;
     background-color: rgb(255, 255, 255);
     min-height: 65vh;
     max-height: 80vh;
@@ -29,6 +30,7 @@
     border-color: rgb(185, 185, 185);
     display: flex;
     justify-content: space-between;
+    background-color: rgb(245, 245, 245);
 }
 
 .Popup-Title h4 {

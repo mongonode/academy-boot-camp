@@ -51,7 +51,7 @@ const VerticalGrid =()=> {
                                 {_isClicked && (
                                     <div className="Grid-Contents">
                                         {courses.map((course) => (
-                                            <div className="col-12 col-md-6 col-lg-6 col-xl-4 px-3 px-sm-3 px-md-0 ps-md-3 pe-md-3 mt-3 pt-2 pt-md-0">
+                                            <div className="col-12 col-md-6 col-lg-6 col-xl-4 px-2 px-sm-3 px-md-0 ps-md-3 pe-md-3 mt-3 pt-2 pt-md-0">
                                                 <DataBox Title={course.title} SubTitle={course.level} Content={course.introduction} Press_Action={()=> selected_Course(course.id)}></DataBox>
                                             </div>
                                         ))}

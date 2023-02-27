@@ -217,7 +217,12 @@ function Course() {
 
             <div className="Selected-Course-Contents px-3 px-sm-4 px-lg-5">
                 {courseContents.map((content) => (
-                    <HoriontalScroller Title={content.contentTitle} List={content.lessons}></HoriontalScroller>
+                    <HoriontalScroller 
+                        Title={content.contentTitle} 
+                        Style={content.style} 
+                        List={content.lessons}
+                        Chunk={content.chunk}>
+                    </HoriontalScroller>
                 ))}
             </div>
         </div>

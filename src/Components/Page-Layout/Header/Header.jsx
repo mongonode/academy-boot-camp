@@ -5,27 +5,8 @@ import { motion } from 'framer-motion';
 import BrandLogo from "../../../Assets/Header/Logo.png";
 import Toggler from "../../../Assets/Header/Toggler.png";
 import TogglerBackground from "../../../Assets/Header/Toggler-Background.png";
+import Navlinks from './NavLinks/NavLinks';
 
-
-const pageLinks = (
-    <ul className='d-lg-flex'>
-        <li><a href="#/">Home</a></li>
-        <li><a href="#/learners">Learners</a></li>
-        <li><a href="#/educators">Educators</a></li>
-        <li><a href="#/enterprises">Enterprises</a></li>
-        <li><a href="#/">Talent Pool</a></li>
-        <li><a href="#/about">About Us</a></li>
-    </ul>
-)
-
-const togglerExpand = (
-    <motion.div className="Toggler-Menu-to-Mobiles d-flex justify-content-between d-block d-lg-none"
-      initial={{ height: 0 }}
-      animate={{ height: '220px' }}>
-        { pageLinks }
-        <img src={TogglerBackground} alt="Background-Toggler" className='mt-4'/>
-    </motion.div>
-)
 
 function Header() {
 
@@ -60,9 +41,16 @@ function Header() {
         </div>
 
         <div className="Page-Handlers">
-            <div className="Expand-Menu-to-Desktops d-none d-lg-block">{ pageLinks }</div>
+            <div className="Expand-Menu-to-Desktops d-none d-lg-block"><Navlinks></Navlinks></div>
 
-            { togglerView && (togglerExpand)}
+            { togglerView && (
+                <motion.div className="Toggler-Menu-to-Mobiles d-flex justify-content-between d-block d-lg-none"
+                  initial={{ height: 0 }}
+                  animate={{ height: '220px' }}>
+                    <Navlinks press_Action={()=> setTogglerView(false)}></Navlinks>
+                    <img src={TogglerBackground} alt="Background-Toggler" className='mt-4'/>
+                </motion.div>
+            )}
 
           <button id="Sign-Btn" className="me-2 me-lg-3">Sign in</button>
         </div>
