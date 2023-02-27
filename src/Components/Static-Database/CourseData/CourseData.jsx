@@ -421,7 +421,7 @@ const CourseData = [
                 title:'LAUNCH TRACK',
                 level:'BUSINESS MODEL CREATION',
                 introduction:'',
-                description:'',
+                description:"Our training mission is to change the way we build business. While the job market is getting shrunk, the only real solution is entrepreneurship. But it is not easy to become an entrepreneur or start a new business. We provide practical learning with hand-holding for our students to learn through the world's most impact business stories and training. We are incredibly passionate about helping you first find out whether this is the right entrepreneur training for you. If you still have questions feel free to reach out. We are happy to help you!",
                 join:'',
                 duration:'',
                 method:'Online (Live)',
