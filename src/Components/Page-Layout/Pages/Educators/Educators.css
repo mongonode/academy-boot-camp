@@ -5,6 +5,7 @@
 }
 
 .Choose-Education-Role h2{
+    font-size: 28px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
 }
@@ -26,5 +27,9 @@
 @media only screen and (min-width: 0px) and (max-width: 768px) {
     .Educator-Intro p {
         font-size: 14px;
+    }
+
+    .Choose-Education-Role h2{
+        font-size: 22px;
     }
 }

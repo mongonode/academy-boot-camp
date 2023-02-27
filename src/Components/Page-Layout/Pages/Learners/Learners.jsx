@@ -1,5 +1,5 @@
 import "./Learners.css"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import LearnerLinks from "../../../Static-Database/LearnerLinks/LearnerLinks";
 
 import PageTitle from "../../../Re-Used/PageTitle/PageTitle";
@@ -49,6 +49,10 @@ function Learners() {
         setLinkPopup(true)
     }
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
       <div className="Learners">
           <div className="row g-0 Title-Learners">
@@ -67,7 +71,8 @@ function Learners() {
           </div>
 
           <div className="Tranings px-2 px-sm-5 pt-5 pb-2">
-                <h2 className="mb-4 text-center">EXPLORE OUR <span>JOB FOCUSED</span> TRANINGS</h2>
+                <h2 className="text-center px-2 px-sm-0">FORMAL EDUCATION WILLMAKE YOU ALIVING <span>SELF-EDUCATION</span> WILL MAKE YOU A FORTUNE</h2>
+                <h5 className="pb-4">- Jim Rohn -</h5>
               <VerticalGrid></VerticalGrid>
           </div>
 

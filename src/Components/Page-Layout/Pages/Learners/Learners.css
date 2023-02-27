@@ -29,12 +29,19 @@
 }
 
 .Tranings h2, .Guidence-Description h2 {
+    color: rgb(0, 0, 0);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 28px;
 }
 
 .Tranings span, .Guidence-Description span {
     color: rgb(0, 58, 219);
+}
+
+.Tranings h5 {
+    margin-top: -5px;
+    color: rgb(104, 104, 104);
+    text-align: center;
 }
 
 .Guidence-Services {
@@ -110,6 +117,10 @@
 
     .Page-Link-List li {
         font-size: 14px;
+    }
+
+    .Tranings h5 {
+        font-size: 17px;
     }
 }
 

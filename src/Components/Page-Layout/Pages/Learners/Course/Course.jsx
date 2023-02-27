@@ -1,6 +1,6 @@
 import "./Course.css"
 import { useLocation } from 'react-router-dom';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import EnrollImg from "../../../../../Assets/Others/Enroll.png"
 import CourseData from "../../../../Static-Database/CourseData/CourseData";
 import InputField from "../../../../Re-Used/InputField/InputField";
@@ -82,6 +82,10 @@ function Course() {
             value:'installment'
         },
     ]
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <div className="Course bg-white">

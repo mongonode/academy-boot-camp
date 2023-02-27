@@ -2,7 +2,7 @@ import "./ImportantBar.css"
 
 const ImportantBar =( props )=> {
     return (
-        <div className="ImportantBar pt-4 pb-3 px-4 px-md-5">
+        <div className="ImportantBar pt-4 pb-3 px-3 px-md-5">
             <h5>{props.Title}</h5>
             <h6>{props.SubTitle}</h6>
 

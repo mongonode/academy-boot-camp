@@ -1,5 +1,6 @@
 import "./Home.css"
 import { useNavigate } from 'react-router-dom';
+import { useEffect } from "react";
 
 import StudentBenifits from "./BenifitTabs/BenifitContents/Student-Benifits/StudentBenifits";
 import EnterprisesBenifits from "./BenifitTabs/BenifitContents/Enterprises-Benifits/EnterprisesBenifits";
@@ -67,6 +68,10 @@ function Home() {
             description : 'Make your passion pay'
         },
     ]
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <div className="Home">

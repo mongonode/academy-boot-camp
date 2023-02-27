@@ -2,6 +2,8 @@ import BulletList from "../../../BulletList/BulletList"
 import ContactForm from "../../../ContactForm/ContactForm"
 import ImportantBar from "../../../ImportantBar/ImportantBar"
 import PageSubtitle from "../../../PageSubtitle/PageSubtitle"
+import { useEffect } from "react"
+import BackButton from "../../../BackButton/BackButton"
 import "./MentorPage.css"
 
 const MentorPage =()=> {
@@ -20,8 +22,17 @@ const MentorPage =()=> {
         'Good communication skills.'
     ]
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className="MentorPage">
+
+            <div className="position-fixed">
+                <BackButton Title='Bak to Educators'></BackButton>
+            </div>
+
             <PageSubtitle First={subtitle.first} Highlighted={subtitle.highlight} Last={subtitle.last}></PageSubtitle>
 
             <div className="Mentor-Introduction pb-1 pb-sm-4">

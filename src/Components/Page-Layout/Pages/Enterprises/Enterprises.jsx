@@ -1,5 +1,5 @@
 import "./Enterprises.css";
-
+import { useEffect } from "react";
 import PageTitle from "../../../Re-Used/PageTitle/PageTitle";
 import BulletList from "../../../Re-Used/BulletList/BulletList";
 import DarkList from "../../../Re-Used/DarkList/DarkList";
@@ -82,6 +82,10 @@ function Enterprises() {
         'Sponsor a student and impact lives.'
       ],
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
     return (
       <div className="Enterprises">

@@ -6,6 +6,7 @@ import Partner from "../../../../Assets/Educators-Page/Partner.png"
 import Mentor from "../../../../Assets/Educators-Page/Mentor.png"
 import { useNavigate } from 'react-router-dom';
 import ContactForm from "../../../Re-Used/ContactForm/ContactForm"
+import { useEffect } from "react"
 
 function Educators() {
 
@@ -43,6 +44,10 @@ function Educators() {
             navigate:'/partner'
         },
     ]
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <div className="Educators">

@@ -8,6 +8,7 @@ import BulletList from "../../../Re-Used/BulletList/BulletList";
 import DarkList from "../../../Re-Used/DarkList/DarkList";
 import ContactForm from "../../../Re-Used/ContactForm/ContactForm";
 import BeliefImage from "../../../../Assets/Others/Belief.png"
+import { useEffect } from "react";
 
 function AboutUs() {
 
@@ -128,6 +129,10 @@ function AboutUs() {
         },
         
     ]
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <div className="AboutUs">
